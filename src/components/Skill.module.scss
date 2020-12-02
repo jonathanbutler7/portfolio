@@ -1,18 +1,35 @@
-.main {
+.main,
+.mainDark {
     height: 20%;
     width: 80%;
     margin: 1rem;
-    border-left: 15px solid var(--color-purple);
-    background: #F3F4F4;
     display: flex;
     justify-content: center;
     align-items: center;
-
     &:hover {
-        border-left: 15px solid var(--color-teal);
         background: gainsboro;
         text-decoration: underline;
-        transition: all 0.5s ease-in-out;
+        transition: var(--transition);
+
+    }
+}
+
+.main {
+    border-left: 15px solid var(--color-purple);
+    background: var(--color-gray2);
+    &:hover {
+        border-left: 15px solid var(--color-teal);
+        transition: var(--transition);
+
+    }
+}
+
+.mainDark {
+    background: var(--color-gray2);
+    border-left: 15px solid var(--color-pink);
+    &:hover {
+        border-left: 15px solid var(--color-purple);
+        transition: var(--transition);
 
     }
 }

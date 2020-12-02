@@ -1,8 +1,48 @@
-.main {
+.main, .mainDark {
     height: 61vh;
     position: relative;
     display: flex;
-    margin: 2rem;
+    padding: 4rem;
+}
+
+.main {
+    .greenBox {
+        background: var(--color-darkteal);
+        transition: var(--transition);
+    }
+    
+    .lightBox {
+        background: var(--color-teal);
+        transition: var(--transition);
+    }
+    
+    .purpleBox {
+        background: var(--color-purple);
+        left: 1rem;
+        top: 1rem;
+        transition: var(--transition);
+    }
+}
+
+.mainDark {
+    background: var(--dark-gray);
+    transition: var(--transition);
+    .greenBox {
+        background: var(--color-darkteal);
+        transition: var(--transition);
+    }
+    
+    .lightBox {
+        background: var(--color-purple);
+        transition: var(--transition);
+    }
+    
+    .purpleBox {
+        transition: var(--transition);
+        background: pink;
+        left: 1rem;
+        top: 1rem;
+    }
 }
 
 .left,
@@ -37,22 +77,6 @@
 .lightBox {
     left: 5rem;
     top: 5rem;
-}
-
-.greenBox {
-    background: var(--color-darkteal);
-    transition: all 0.5s ease-in-out;
-}
-
-.lightBox {
-    background: var(--color-teal);
-    transition: all 0.5s ease-in-out;
-}
-
-.purpleBox {
-    background: var(--color-purple);
-    left: 1rem;
-    top: 1rem;
 }
 
 @media only screen and (max-width: 920px) {

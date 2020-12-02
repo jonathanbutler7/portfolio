@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './About.module.scss';
 // import { GrReactjs, GrNode } from 'react-icons/gr';
 // import { SiJquery, SiPostgresql } from 'react-icons/si';
+import Context from '../store/context'
+
 
 function About() {
+  const { isDarkMode } = useContext(Context);
   return (
-    <div className={styles.main}>
+    <div className={isDarkMode ? styles.mainDark : styles.main}>
       <div className={styles.text}>
         <h1>I am a full stack developer</h1>
         <h2>with a background as a cellist.</h2>

@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './Skill.module.scss';
+import Context from '../store/context';
 
 function Skill({ skill, setText, setHoverActive }) {
+  const { isDarkMode } = useContext(Context);
   function switchItUp(boolean, str) {
     setText(str);
     setHoverActive(boolean);
@@ -9,7 +11,7 @@ function Skill({ skill, setText, setHoverActive }) {
 
   return (
     <div
-      className={styles.main}
+      className={isDarkMode ? styles.mainDark : styles.main}
       onMouseEnter={() => switchItUp(true, skill.detail)}
       onMouseLeave={() => switchItUp(false, 'i bring to the table...')}
     >

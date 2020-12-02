@@ -7,7 +7,7 @@ function NavBar() {
   const { isDarkMode } = useContext(PortfolioContext);
 
   return (
-    <div className={styles.navBar}>
+    <div className={isDarkMode ? styles.navBarDark : styles.navBar}>
       <section className={styles.left}>
         <a href='#projects'>
           <h1>Projects</h1>

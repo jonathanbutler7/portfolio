@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import styles from './SoftSkills.module.scss';
 import Skill from './Skill';
 import { softSkills } from '../store/skills';
+import Context from '../store/context';
 
 function SoftSkills() {
+  const { isDarkMode } = useContext(Context);
   const [text, setText] = useState('i bring to the table...');
   const [hoverActive, setHoverActive] = useState(false);
   return (
-    <div className={styles.main}>
+    <div className={isDarkMode ? styles.mainDark : styles.main}>
       <section className={styles.left}>
         <div className={styles.purpleBox}></div>
         <div className={hoverActive ? styles.lightBox : styles.greenBox}>

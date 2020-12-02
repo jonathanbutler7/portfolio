@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Context.Provider value={{ isDarkMode, setIsDarkMode }}>
         {components.map((component) => (
-          <Route path='/' component={component} key={component} />
+          <Route path='/' component={component} key={component} className='light-theme' />
         ))}
       </Context.Provider>
     </BrowserRouter>

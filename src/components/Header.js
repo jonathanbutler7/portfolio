@@ -6,7 +6,7 @@ import Context from '../store/context';
 function Header() {
   const { isDarkMode, setIsDarkMode } = useContext(Context);
   return (
-    <nav className={styles.nav}>
+    <nav className={isDarkMode ? styles.navDark : styles.nav}>
       <div className={styles.left}>
         <code>Jonathan drinks</code>
         <h1>☕</h1>

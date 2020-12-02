@@ -1,10 +1,20 @@
-.main {
+.main, .mainDark {
     padding: 2rem;
-    background: var(--color-gray2);
     display: flex;
     h1 {
         margin: 0;
     }
+}
+
+.main {
+    background: var(--color-gray2);
+    transition: var(--transition);
+}
+
+.mainDark {
+    background: var(--dark-lightgray);
+    transition: var(--transition);
+    color: var(--dark-accent)
 }
 
 .text {

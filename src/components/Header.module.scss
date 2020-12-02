@@ -1,12 +1,23 @@
-.nav {
-    // background: #E5E5E5;
-    background: var(--color-purple);
-    color: white;
+.nav,
+.navDark {
+    
     height: 5rem;
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.nav {
+    background: var(--color-purple);
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+.navDark {
+    background: var(--dark-black);
+    color: var(--dark-accent);
+    transition: var(--transition);
 }
 
 .left {
@@ -18,4 +29,4 @@
     .nav code {
         display: none;
     }
-  }
+}

@@ -30,6 +30,14 @@ Use a more readable tab size (opinionated).
   --color-darkteal: #083D4F;
   --color-darkblue: #002739;
   --color-white: white;
+  --color-pink: pink;
+  --dark-black: #000000;
+  --dark-gray: #3C4042;
+  --dark-lightgray: #606368;
+  --dark-accent: #D5D5D5;
+  --dark-purple: #BB86FC;
+  --dark-pink: #EA80FC;
+  --transition: all 0.5s ease-in-out;
 }
 
 /**

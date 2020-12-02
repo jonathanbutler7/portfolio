@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './Header.module.scss';
 import Switch from './Switch';
+import PortfolioContext from '../context';
 
 function Header() {
+  const { isDarkMode, setIsDarkMode } = useContext(PortfolioContext);
   return (
     <nav className={styles.nav}>
       <div className={styles.left}>

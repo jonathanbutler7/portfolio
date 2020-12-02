@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Projects.module.scss';
 import Card from './Card';
+// import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 
 function Projects() {
   const projects = ['quiz', 'space x', 'notes'];

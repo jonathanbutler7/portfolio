@@ -450,7 +450,7 @@ button,
 table {
   border-collapse: collapse;
 }
-
+/* 
 h1,
 h2,
 h3,
@@ -459,7 +459,7 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
-}
+} */
 
 /**
  * Reset links to optimize for opt-in styling instead of

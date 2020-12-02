@@ -2,6 +2,13 @@
     background: #F3F4F4;
     height: 80vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards {
     justify-content: space-between;
-    padding: 8rem;
+    padding: 6rem 0;
+    display: flex;
 }

@@ -1,0 +1,26 @@
+.selectBar {
+    height: 5rem;
+    border-bottom: 1px solid #DEE1E1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.left,
+.right {
+    flex: 1;
+    display: flex;
+}
+
+.left {
+    justify-content: space-evenly;
+}
+
+.right {
+    justify-content: flex-end;
+    padding-right: 2rem;
+}

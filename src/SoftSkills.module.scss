@@ -4,7 +4,8 @@
     display: flex;
 }
 
-.left, .right {
+.left,
+.right {
     // border: 1px solid red;
     flex: 1;
     display: flex;
@@ -17,18 +18,29 @@
     align-items: center;
 }
 
-.greenBox {
+.greenBox,
+.lightBox {
     height: 40vh;
     width: 40vw;
-    background: #083D4F;
     position: absolute;
     left: 80px;
     top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #E5E5E5;
+    color: white;
 }
+
+.greenBox {
+    background: #083D4F;
+    transition: all 0.5s ease-in-out;
+}
+
+.lightBox {
+    background: #0897AE;
+    transition: all 0.5s ease-in-out;
+}
+
 .purpleBox {
     height: 40vh;
     width: 40vw;

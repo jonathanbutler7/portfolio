@@ -4,11 +4,13 @@ import styles from './About.module.scss';
 function About() {
   return (
     <div className={styles.main}>
-      <h1>I am a full stack developer with a background as a cellist</h1>
+      <h1>I am a full stack developer</h1>
+      <h2>with a background as a cellist.</h2>
       <p>
-        Understand and reach your audience, engage your community and measure
-        performance with the only all-in-one social media management platform
-        built for connection.
+        I am looking for software development work where I can 
+      </p>
+      <p>
+      build intuitive UIs that alleviate a specific pain point & improve peoples' lives.
       </p>
     </div>
   );

@@ -1,13 +1,16 @@
 import './styles/main.css';
+// import './App.css'
 import NavBar from './NavBar';
 import SelectBar from './SelectBar';
+import Section from './CardContainer';
 
 function App() {
   return (
-  <>
-  <NavBar />
-    <SelectBar />
-  </>
+    <div>
+      <NavBar />
+      <SelectBar />
+      <Section />
+    </div>
   );
 }
 

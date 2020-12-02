@@ -9,7 +9,9 @@ function SelectBar() {
         <a href=''>Projects</a>
         <a href=''>Contact</a>
       </section>
-      <section className={styles.right}>click me</section>
+      <section className={styles.right}>
+        <button>click me</button>
+      </section>
     </div>
   );
 }

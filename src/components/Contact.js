@@ -2,18 +2,19 @@ import React from 'react';
 import styles from './Contact.module.scss';
 import { GrLinkedin, GrGithub } from 'react-icons/gr';
 import { VscMail } from 'react-icons/vsc';
+import { linkedIn, github, email } from '../store/links';
 
 function Contact() {
   return (
     <div className={styles.main} id='contact'>
       <div className={styles.iconContainer}>
-        <a href='https://linkedin.com'>
+        <a target='blank' href={linkedIn}>
           <GrLinkedin />
         </a>
-        <a href='github.com'>
+        <a target='blank' href={github}>
           <GrGithub />
         </a>
-        <a href='mailto:jonathanbutler7@gmail.com' >
+        <a href={email}>
           <VscMail />
         </a>
       </div>

@@ -1,9 +1,7 @@
 import React, { useContext } from 'react';
 import styles from './Projects.module.scss';
 import Card from './Card';
-// import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import Context from '../store/context';
-
 
 function Projects() {
   const { isDarkMode } = useContext(Context);

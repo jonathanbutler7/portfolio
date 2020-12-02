@@ -1,5 +1,4 @@
 import './styles/main.css';
-// import './App.css'
 import { useState } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { components } from './store/components';

@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
 import styles from './About.module.scss';
-// import { GrReactjs, GrNode } from 'react-icons/gr';
-// import { SiJquery, SiPostgresql } from 'react-icons/si';
 import Context from '../store/context'
 
 
@@ -18,12 +16,6 @@ function About() {
           peoples' lives.
         </h3>
       </div>
-      {/* <div className={styles.technologies}>
-        <GrReactjs />
-        <SiJquery />
-        <SiPostgresql />
-        <GrNode />
-      </div> */}
     </div>
   );
 }

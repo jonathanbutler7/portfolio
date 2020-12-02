@@ -48,3 +48,14 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+.technologies {
+    width: 100%;
+    display: flex;
+    padding-top: 1rem;;
+    justify-content: space-evenly;
+    svg {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Card.module.scss';
+import { GrReactjs, GrNode } from 'react-icons/gr';
+import { SiJquery, SiPostgresql } from 'react-icons/si';
 
 function Card({ title }) {
   return (
@@ -9,7 +11,10 @@ function Card({ title }) {
         <h1>{title}</h1>
       </div>
       <div className={styles.technologies}>
-        react jquery html
+        <GrReactjs />
+        <SiJquery />
+        <SiPostgresql />
+        <GrNode />
       </div>
       <div className={styles.buttonContainer}>
         <button>github</button>

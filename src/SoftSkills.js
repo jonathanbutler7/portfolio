@@ -4,7 +4,7 @@ import Skill from './Skill';
 import { softSkills } from './store';
 
 function SoftSkills() {
-  const [text, setText] = useState('what do i bring?');
+  const [text, setText] = useState('i bring to the table...');
   return (
     <div className={styles.main}>
       <section className={styles.left}>

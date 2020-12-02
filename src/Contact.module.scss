@@ -2,4 +2,17 @@
     background: #002739;
     color: white;
     height: 80vh;
+
+    svg {
+        height: 5rem;
+        width: 5rem;
+        
+    }
+}
+
+.iconContainer {
+    width: 100%;
+    display: flex;
+    padding: 5rem;
+    justify-content: space-evenly;
 }

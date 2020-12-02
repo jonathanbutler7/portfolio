@@ -1,5 +1,5 @@
 .main {
-    background: #F3F4F4;
+    background: var(--color-gray1);
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,6 @@ h1 {
 
 .cards {
     justify-content: space-between;
-    // padding: 6rem 0;
     display: flex;
 }
 

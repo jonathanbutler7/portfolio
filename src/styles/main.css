@@ -22,6 +22,14 @@ Use a more readable tab size (opinionated).
 :root {
   -moz-tab-size: 4;
   tab-size: 4;
+  --color-gray1: #dfdfdf;
+  --color-gray2: #F3F4F4;
+  --color-purple: #6f5ed3;
+  --color-green: #0BA74F;
+  --color-teal: #0897AE;
+  --color-darkteal: #083D4F;
+  --color-darkblue: #002739;
+  --color-white: white;
 }
 
 /**

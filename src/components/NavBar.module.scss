@@ -1,7 +1,6 @@
-.selectBar {
+.navBar {
     height: 5rem;
-    border-bottom: 1px solid #DEE1E1;
-    background: #dfdfdf;
+    background: var(--color-gray1);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -37,5 +36,6 @@ button {
     padding-right: 2rem;
     button {
         width: 11rem;
+        background: var(--color-green);
     }
 }

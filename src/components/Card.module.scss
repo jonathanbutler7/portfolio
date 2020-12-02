@@ -1,5 +1,6 @@
-.card, .darkCard {
-    
+.card,
+.darkCard {
+
     height: 23rem;
     flex: .75;
     min-height: 400px;
@@ -12,16 +13,30 @@
     position: relative;
     margin: 0 2rem;
     transition: transform .2s;
+
     &:hover {
         transform: scale(1.1);
     }
 }
 
+button {
+    width: 8rem;
+    height: 3rem;
+    color: white;
+    margin: 2rem 0;
+}
+
 .card {
     background: white;
     border: 1px solid var(--color-gray1);
+
     .circle {
         background: var(--color-purple);
+    }
+
+    button {
+        background: var(--color-green);
+
     }
 }
 
@@ -30,9 +45,14 @@
     color: var(--dark-accent);
     border: none;
     border-radius: .2rem;
+
     .circle {
         background: var(--color-pink);
         color: black;
+    }
+
+    button {
+        background: var(--dark-purple);
     }
 }
 
@@ -46,6 +66,7 @@
     justify-content: center;
     align-items: center;
     transition: transform .2s;
+
     svg {
         height: 5rem;
         width: 5rem;
@@ -58,13 +79,7 @@
     justify-content: space-around;
 }
 
-button {
-    background: var(--color-green);
-    width: 8rem;
-    height: 3rem;
-    color: white;
-    margin: 2rem 0;
-}
+
 
 
 
@@ -80,8 +95,10 @@ button {
 .technologies {
     width: 100%;
     display: flex;
-    padding-top: 1rem;;
+    padding-top: 1rem;
+    ;
     justify-content: space-evenly;
+
     svg {
         height: 2.5rem;
         width: 2.5rem;
@@ -91,8 +108,8 @@ button {
 
 @media only screen and (max-width: 920px) {
     .card {
-      flex-direction: column;
-      margin: 4rem auto;
-      justify-content: flex-end;
+        flex-direction: column;
+        margin: 4rem auto;
+        justify-content: flex-end;
     }
-  }
+}

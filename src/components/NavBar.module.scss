@@ -14,12 +14,21 @@
 .navBar {
     background: var(--color-gray1);
     transition: var(--transition);
+    button {
+        width: 11rem;
+        background: var(--color-green);
+    }
 }
 
 .navBarDark {
     background: var(--dark-gray);
     color: var(--dark-accent);
     transition: var(--transition);
+    button {
+        width: 11rem;
+        background: var(--dark-purple);
+        color: var(--dark-accent);
+    }
 }
 
 button {
@@ -44,8 +53,4 @@ button {
 .right {
     justify-content: flex-end;
     padding-right: 2rem;
-    button {
-        width: 11rem;
-        background: var(--color-green);
-    }
 }

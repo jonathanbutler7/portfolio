@@ -1,9 +1,9 @@
-import NavBar from './Header';
-import SelectBar from './SelectBar';
-import Contact from './Contact';
-import About from './About';
-import SoftSkills from './SoftSkills';
-import Projects from './Projects';
+import NavBar from './components/Header';
+import SelectBar from './components/SelectBar';
+import Contact from './components/Contact';
+import About from './components/About';
+import SoftSkills from './components/SoftSkills';
+import Projects from './components/Projects';
 
 const components = [NavBar, SelectBar, About, SoftSkills, Projects, Contact];
 

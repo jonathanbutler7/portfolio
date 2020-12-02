@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './SoftSkills.module.scss';
 import Skill from './Skill';
-import { softSkills } from './store';
+import { softSkills } from '../store';
 
 function SoftSkills() {
   const [text, setText] = useState('i bring to the table...');

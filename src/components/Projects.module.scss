@@ -1,5 +1,5 @@
-.main {
-    background: var(--color-gray1);
+.main, .darkMain {
+    
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -7,6 +7,13 @@
     text-align: center;
 }
 
+.main {
+    background: var(--color-gray1);
+}
+.darkMain {
+    background: var(--dark-lightgray);
+    color: var(--dark-accent);
+}
 h1 {
     margin-bottom: 2rem;
 }

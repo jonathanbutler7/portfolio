@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './Card.module.scss';
 import { GrReactjs, GrNode, GrNotes } from 'react-icons/gr';
 import { SiJquery, SiPostgresql } from 'react-icons/si';
 import { FaSpaceShuttle } from 'react-icons/fa'
 import { GoPencil } from 'react-icons/go'
+import Context from '../store/context';
+
 
 function Card({ title }) {
+  const { isDarkMode } = useContext(Context);
   return (
-    <div className={styles.card}>
+    <div className={isDarkMode ? styles.darkCard : styles.card}>
       <div className={styles.circle}>
         {title === 'notes' && <GrNotes />}
         {title === 'quiz' && <GoPencil />}

@@ -13,7 +13,7 @@ function Contact() {
         <a href='github.com'>
           <GrGithub />
         </a>
-        <a mailto='jonathanbutler7@gmail.com'>
+        <a href='mailto:jonathanbutler7@gmail.com' >
           <VscMail />
         </a>
       </div>

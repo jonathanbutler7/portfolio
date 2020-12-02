@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './NavBar.module.scss';
-import { AiOutlineCoffee } from 'react-icons/ai';
+
 
 function NavBar() {
   return (

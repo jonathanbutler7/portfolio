@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './About.module.scss';
-import { GrReactjs, GrNode } from 'react-icons/gr';
-import { SiJquery, SiPostgresql } from 'react-icons/si';
+// import { GrReactjs, GrNode } from 'react-icons/gr';
+// import { SiJquery, SiPostgresql } from 'react-icons/si';
 
 function About() {
   return (

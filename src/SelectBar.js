@@ -15,7 +15,7 @@ function SelectBar() {
       <section className={styles.left}>
         <a href='#projects'>Projects</a>
         <a href='#contact'>Contact</a>
-        <a href=''>Resume</a>
+        <a href='#resume'>Resume</a>
       </section>
       <section className={styles.right}>
         <button onClick={() => explode()}>do. not. click. here.</button>

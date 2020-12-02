@@ -11,7 +11,7 @@ function About() {
         <h2>with a background as a cellist.</h2>
         <h3>I am looking for a job in software where I can</h3>
         <h3>
-          build intuitive UIs that alleviate a specific pain point & improve
+          build intuitive UIs that alleviate pain points & improve
           peoples' lives.
         </h3>
       </div>

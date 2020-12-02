@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       {components.map((component) => (
-        <Route path='/' component={component} />
+        <Route path='/' component={component} key={component} />
       ))}
     </BrowserRouter>
   );

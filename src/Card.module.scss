@@ -1,14 +1,18 @@
 .card {
     background: white;
     border: 1px solid #DEE1E1;
-    height: 25rem;
+    height: 23rem;
     flex: .75;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
     margin: 0 2rem;
+    transition: transform .2s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .buttonContainer {
@@ -26,18 +30,14 @@ button {
 }
 
 .circle {
-    height: 10rem;
-    width: 10rem;
+    height: 12rem;
+    width: 12rem;
     border: 1px solid black;
     border-radius: 100%;
     position: absolute;
     top: -5rem;
     transition: transform .2s;
     background: #6F5ED3;
-    &:hover {
-        transform: scale(1.2);
-        transition: transform .2s;
-    }
 }
 
 .titleContainer {

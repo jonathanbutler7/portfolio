@@ -17,7 +17,7 @@ function Card({ title }) {
         <GrNode />
       </div>
       <div className={styles.buttonContainer}>
-        <button>github</button>
+        <button>code</button>
         <button>live</button>
       </div>
     </div>

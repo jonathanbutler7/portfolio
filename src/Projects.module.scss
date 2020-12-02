@@ -9,6 +9,16 @@
 
 .cards {
     justify-content: space-between;
-    padding: 6rem 0;
+    // padding: 6rem 0;
     display: flex;
 }
+
+@media only screen and (max-width: 920px) {
+    .main {
+        height: 200vh;
+        justify-content: space-between;
+    }
+    .cards {
+      flex-direction: column;
+    }
+  }

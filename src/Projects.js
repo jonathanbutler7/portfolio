@@ -3,13 +3,14 @@ import styles from './Projects.module.scss';
 import Card from './Card';
 
 function Projects() {
+  const projects = ['quiz', 'space x', 'notes'];
   return (
     <div className={styles.main} id='projects'>
       <h1>stuff i built</h1>
       <div className={styles.cards}>
-        <Card title={'quiz'} />
-        <Card title={'space x'} />
-        <Card title={'notes'} />
+        {projects.map((project) => (
+          <Card title={project} key={project} />
+        ))}
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 .main {
     background: #002739;
     color: white;
+    position: relative;
     svg {
         height: 5rem;
         width: 5rem;
@@ -13,3 +14,10 @@
     padding: 5rem;
     justify-content: space-evenly;
 }
+
+@media only screen and (max-width: 920px) {
+    .iconContainer svg {
+        height: 2rem;
+        width: 2rem;
+    }
+  }

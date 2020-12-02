@@ -56,3 +56,23 @@
     left: 1rem;
     top: 1rem;
 }
+
+@media only screen and (max-width: 920px) {
+    .main {
+      flex-direction: column;
+      margin: 0;
+      height: 80vh;
+    }
+    .purpleBox, .greenBox, .lightBox {
+        width: 80vw;
+        height: 35vh;
+    }
+    .purpleBox {
+        left: 1rem;
+
+    }
+    .greenBox, .lightBox {
+        left: 3rem;
+        top: 2rem;
+    }
+  }

@@ -3,6 +3,9 @@
     border: 1px solid #DEE1E1;
     height: 23rem;
     flex: .75;
+    min-height: 400px;
+    max-width: 500px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -34,7 +37,7 @@ button {
     width: 12rem;
     border-radius: 100%;
     position: absolute;
-    top: -5rem;
+    top: -3rem;
     transition: transform .2s;
     background: #6F5ED3;
 }
@@ -58,3 +61,12 @@ button {
         width: 2.5rem;
     }
 }
+
+
+@media only screen and (max-width: 920px) {
+    .card {
+      flex-direction: column;
+      margin: 4rem auto;
+      justify-content: flex-end;
+    }
+  }

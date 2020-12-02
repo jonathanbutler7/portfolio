@@ -1,4 +1,4 @@
-import NavBar from './NavBar';
+import NavBar from './Header';
 import SelectBar from './SelectBar';
 import Contact from './Contact';
 import About from './About';

@@ -5,9 +5,9 @@ import { AiOutlineCoffee } from 'react-icons/ai';
 function NavBar() {
   return (
     <nav className={styles.nav}>
-      {/* <AiOutlineCoffee /> */}
+      <code>Jonathan drinks</code>
       <h1>☕</h1>
-      <h1>Jonathan</h1>
+      <code>while he codes.</code>
     </nav>
   );
 }

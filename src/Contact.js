@@ -5,7 +5,7 @@ import { VscMail } from 'react-icons/vsc';
 
 function Contact() {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id='contact'>
       <div className={styles.iconContainer}>
         <a href='https://linkedin.com'>
           <GrLinkedin />

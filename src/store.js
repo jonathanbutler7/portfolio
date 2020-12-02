@@ -1,20 +1,20 @@
 // const softSkills = [{'engagement'}, 'analytics', 'critical thinking', 'fun']
 const softSkills = [
     {
-        title: 'engagement',
-        detail: 'i can engage good'
+        title: 'problem solver',
+        detail: 'i thrive when i am confronted with a problem that is larger than my current skillset.'
     },
     {
-        title: 'analytics',
-        detail: 'i can analytics good'
+        title: 'collaborator',
+        detail: 'as a musician, my entire career was dependant on my abiblity to work with others.'
     },
     {
-        title: 'critical thinking',
-        detail: 'i can think good'
+        title: 'self starter',
+        detail: 'when i finished my dissertation remotely, i was required stay disciplined and motivated to tackle a large goal.'
     },
     {
-        title: 'fun',
-        detail: 'i can fun good'
+        title: 'leader',
+        detail: 'i have no problem laying down my own ideas to serve the client\'s needs.'
     },
 ]
 

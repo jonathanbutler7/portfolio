@@ -13,7 +13,7 @@ function Skill({ skill, setText, setHoverActive }) {
       onMouseEnter={() => switchItUp(true, skill.detail)}
       onMouseLeave={() => switchItUp(false, 'i bring to the table...')}
     >
-      {skill.title}
+      <h3>{skill.title}</h3>
     </div>
   );
 }

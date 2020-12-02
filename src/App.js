@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import SelectBar from './SelectBar';
 import Contact from './Contact';
 import About from './About';
+import SoftSkills from './SoftSkills';
 import CardContainer from './CardContainer';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <SelectBar />
       <About />
+      <SoftSkills />
       <CardContainer />
       <Contact />
     </div>

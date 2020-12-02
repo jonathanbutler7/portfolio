@@ -7,13 +7,16 @@ function Contact() {
   return (
     <div className={styles.main} id='contact'>
       <div className={styles.iconContainer}>
-        <a href='https://linkedin.com'>
+        <a
+          target='blank'
+          href='https://www.linkedin.com/in/jonathan-butler-9960a91a8/'
+        >
           <GrLinkedin />
         </a>
-        <a href='github.com'>
+        <a target='blank' href='https://github.com/jonathanbutler7'>
           <GrGithub />
         </a>
-        <a href='mailto:jonathanbutler7@gmail.com' >
+        <a href='mailto:jonathanbutler7@gmail.com'>
           <VscMail />
         </a>
       </div>

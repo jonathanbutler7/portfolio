@@ -4,6 +4,7 @@ import Context from '../store/context';
 
 function Skill({ skill, setText, setHoverActive }) {
   const { isDarkMode } = useContext(Context);
+  
   function switchItUp(boolean, str) {
     setText(str);
     setHoverActive(boolean);

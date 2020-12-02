@@ -4,7 +4,7 @@ import Switch from './Switch';
 import Context from '../store/context';
 
 function Header() {
-  const { isDarkMode, setIsDarkMode } = useContext(Context);
+  const { isDarkMode } = useContext(Context);
   return (
     <nav className={isDarkMode ? styles.navDark : styles.nav}>
       <div className={styles.left}>

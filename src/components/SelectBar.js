@@ -13,12 +13,14 @@ function SelectBar() {
   return (
     <div className={styles.selectBar}>
       <section className={styles.left}>
-        <a href='#projects'>Projects</a>
-        <a href='#contact'>Contact</a>
-        <a href='#resume'>Resume</a>
+        <a href='#projects'><h1>Projects</h1></a>
+        <a href='#contact'><h1>Contact</h1></a>
+        <a href='#resume'><h1>Resume</h1></a>
       </section>
       <section className={styles.right}>
-        <button onClick={() => explode()}>do. not. click. here.</button>
+        <button onClick={() => explode()}>
+          <h5>do not click here</h5>
+        </button>
       </section>
     </div>
   );

@@ -5,7 +5,6 @@ import { softSkills } from './store';
 
 function SoftSkills() {
   const [text, setText] = useState('what do i bring?');
-  console.log(text);
   return (
     <div className={styles.main}>
       <section className={styles.left}>

@@ -10,7 +10,7 @@ function SelectBar() {
         <a href=''>Contact</a>
       </section>
       <section className={styles.right}>
-        <button>click me</button>
+        <button>do. not. click. here.</button>
       </section>
     </div>
   );

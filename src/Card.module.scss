@@ -32,7 +32,12 @@ button {
     border-radius: 100%;
     position: absolute;
     top: -5rem;
+    transition: transform .2s;
     background: #6F5ED3;
+    &:hover {
+        transform: scale(1.2);
+        transition: transform .2s;
+    }
 }
 
 .titleContainer {

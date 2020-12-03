@@ -1,21 +1,16 @@
 import React, { useContext } from 'react';
 import styles from './Card.module.scss';
-import { GrReactjs, GrNode, GrNotes } from 'react-icons/gr';
+import { GrReactjs, GrNode } from 'react-icons/gr';
 import { SiJquery, SiPostgresql } from 'react-icons/si';
-import { FaSpaceShuttle } from 'react-icons/fa'
-import { GoPencil } from 'react-icons/go'
 import Context from '../store/context';
 
-
-function Card({ title }) {
+function Card({ project }) {
   const { isDarkMode } = useContext(Context);
+  const { title } = project;
+
   return (
     <div className={isDarkMode ? styles.darkCard : styles.card}>
-      <div className={styles.circle}>
-        {title === 'notes' && <GrNotes />}
-        {title === 'quiz' && <GoPencil />}
-        {title === 'space x' && <FaSpaceShuttle style={{transform: 'rotate(-90deg)'}}/>}
-      </div>
+      <div className={styles.circle}>{project.icon}</div>
       <div className={styles.titleContainer}>
         <h1>{title}</h1>
       </div>
@@ -26,8 +21,16 @@ function Card({ title }) {
         <GrNode />
       </div>
       <div className={styles.buttonContainer}>
-        <button>code</button>
-        <button>live</button>
+        <button>
+          <a href={project.code}>
+            <code>code</code>
+          </a>
+        </button>
+        <button>
+          <a href={project.live}>
+            <code>live</code>
+          </a>
+        </button>
       </div>
     </div>
   );

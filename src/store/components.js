@@ -1,6 +1,6 @@
 import NavBar from '../components/Header';
 import SelectBar from '../components/NavBar';
-import Contact from '../components/Contact';
+import Contact from '../components/Footer';
 import About from '../components/About';
 import SoftSkills from '../components/SoftSkills';
 import Projects from '../components/Projects';

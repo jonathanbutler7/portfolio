@@ -12,22 +12,25 @@ import { FaSpaceShuttle } from 'react-icons/fa';
 
 const projects = [
   {
-    title: 'notes',
-    code: notefulCode,
-    live: notefulApp,
-    icon: <GrNotes />,
-  },
-  {
     title: 'space x',
     code: spaceXCode,
     live: spaceXApp,
     icon: <GoPencil />,
+    technologies: 'built using jquery, NASA, and Space-X APIs',
+  },
+  {
+    title: 'notes',
+    code: notefulCode,
+    live: notefulApp,
+    icon: <GrNotes />,
+    technologies: 'built using the PERN stack',
   },
   {
     title: 'quiz',
     code: quizApp,
     live: quizCode,
     icon: <FaSpaceShuttle />,
+    technologies: 'built using jquery, knowledge of The Office',
   },
 ];
 

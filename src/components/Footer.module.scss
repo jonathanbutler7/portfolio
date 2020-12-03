@@ -1,11 +1,19 @@
-.main {
-    background: var(--color-darkblue);
+.main, .darkMain {
+    
     color: white;
     position: relative;
     svg {
         height: 5rem;
         width: 5rem;
     }
+}
+
+.main {
+    background: var(--color-darkblue);
+}
+
+.darkMain {
+    background: var(--dark-gray)
 }
 
 .iconContainer {

@@ -5,7 +5,7 @@ import Context from '../store/context';
 function Card({ project }) {
   const { isDarkMode } = useContext(Context);
   const { title, icon, technologies, code, live } = project;
-  
+
   return (
     <div className={isDarkMode ? styles.darkCard : styles.card}>
       <div className={styles.circle}>{icon}</div>
@@ -17,12 +17,12 @@ function Card({ project }) {
       </div>
       <div className={styles.buttonContainer}>
         <button>
-          <a href={code}>
+          <a href={code} target='blank'>
             <code>code</code>
           </a>
         </button>
         <button>
-          <a href={live}>
+          <a href={live} target='blank'>
             <code>live</code>
           </a>
         </button>

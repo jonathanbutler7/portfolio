@@ -8,12 +8,12 @@ const softSkills = [
   {
     title: 'collaboration',
     detail:
-      'as a musician, my entire career was dependant on my abiblity to work with others.',
+      'as a musician, my entire career was dependent on my ability to work with others.',
   },
   {
     title: 'motivation',
     detail:
-      'when i finished my dissertation remotely, i was required stay disciplined and motivated to tackle a large goal.',
+      'when i finished my dissertation remotely, i was required to stay disciplined and motivated to tackle a large goal.',
   },
   {
     title: 'leadership',

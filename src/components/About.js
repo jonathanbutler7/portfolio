@@ -5,6 +5,7 @@ import Context from '../store/context'
 
 function About() {
   const { isDarkMode } = useContext(Context);
+  
   return (
     <div className={isDarkMode ? styles.mainDark : styles.main}>
       <div className={styles.text}>

@@ -8,6 +8,7 @@ function SoftSkills() {
   const { isDarkMode } = useContext(Context);
   const [text, setText] = useState('i bring to the table...');
   const [hoverActive, setHoverActive] = useState(false);
+  
   return (
     <div className={isDarkMode ? styles.mainDark : styles.main}>
       <section className={styles.left}>

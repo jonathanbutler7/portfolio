@@ -6,7 +6,7 @@ import { resume } from '../store/links';
 
 function NavBar() {
   const { isDarkMode } = useContext(PortfolioContext);
-
+  
   return (
     <div className={isDarkMode ? styles.navBarDark : styles.navBar}>
       <section className={styles.left}>
@@ -17,8 +17,8 @@ function NavBar() {
           <h1>Contact</h1>
         </a>
         <a
-          target='blank'
           href={resume}
+          target='blank'
         >
           <h1>Resume</h1>
         </a>

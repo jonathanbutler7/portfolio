@@ -6,6 +6,7 @@ import { projects } from '../store/projects';
 
 function Projects() {
   const { isDarkMode } = useContext(Context);
+  
   return (
     <div className={isDarkMode ? styles.darkMain : styles.main} id='projects'>
       <h1>stuff i built</h1>

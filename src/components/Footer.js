@@ -7,6 +7,7 @@ import Context from '../store/context';
 
 function Footer() {
   const { isDarkMode } = useContext(Context);
+  
   return (
     <div className={isDarkMode ? styles.darkMain : styles.main} id='contact'>
       <div className={styles.iconContainer}>

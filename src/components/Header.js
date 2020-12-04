@@ -9,7 +9,7 @@ import { emojisplosion } from 'emojisplosion';
 function Header() {
   const { isDarkMode } = useContext(Context);
   const [menu, showMenu] = useState(false);
-  console.log(menu);
+  
   return (
     <header className={isDarkMode ? styles.navDark : styles.nav}>
       <GiHamburgerMenu

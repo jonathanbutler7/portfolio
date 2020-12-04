@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     h1 {
         margin: 0 .5rem 0 .5rem;
     }
@@ -28,7 +29,12 @@
 }
 
 @media only screen and (max-width: 920px) {
-    .nav code {
+    .nav code,
+    .navDark code {
         display: none;
+    }
+    svg {
+        height: 3rem;
+        width: 3rem;
     }
 }

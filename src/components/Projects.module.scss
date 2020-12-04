@@ -1,8 +1,9 @@
 .main,
 .darkMain {
-    height: 80vh;
+    // height: 80vh;
     display: flex;
     flex-direction: column;
+    
     justify-content: space-evenly;
     text-align: center;
 }
@@ -17,12 +18,13 @@
 }
 
 h1 {
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 
 .cards {
     justify-content: space-between;
     display: flex;
+    padding: 4rem 1rem;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -34,6 +36,7 @@ h1 {
 
     .cards {
         flex-direction: column;
+        padding: 0;
     }
 
     h1 {

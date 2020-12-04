@@ -2,12 +2,13 @@ import React, { useContext } from 'react';
 import styles from './Header.module.scss';
 import Switch from './Switch';
 import Context from '../store/context';
-
+import { GiHamburgerMenu } from 'react-icons/gi'
 function Header() {
   const { isDarkMode } = useContext(Context);
   
   return (
     <nav className={isDarkMode ? styles.navDark : styles.nav}>
+      <GiHamburgerMenu />
       <div className={styles.left}>
         <code>Jonathan drinks</code>
         <h1>☕</h1>

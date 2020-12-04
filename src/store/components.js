@@ -11,7 +11,7 @@ const components = [
   <About />,
   <SoftSkills />,
   <Projects />,
-  // <Footer />,
+  <Footer />,
 ];
 
 export { components };

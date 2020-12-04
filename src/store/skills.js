@@ -1,14 +1,13 @@
-// const softSkills = [{'engagement'}, 'analytics', 'critical thinking', 'fun']
 const softSkills = [
   {
     title: 'problem solving',
     detail:
-      'i thrive when i am confronted with a problem that is larger than my current skillset.',
+      'i thrive when i am confronted with a problem larger than my current skillset.',
   },
   {
     title: 'collaboration',
     detail:
-      'as a musician, my entire career was dependent on my ability to work with others.',
+      'as a musician, my entire career was dependent on my ability to work well with others.',
   },
   {
     title: 'motivation',
@@ -18,7 +17,7 @@ const softSkills = [
   {
     title: 'leadership',
     detail:
-      "i have no problem laying down my own ideas to serve the client's needs.",
+      'leaders lay down their goals, and i gladly lay down my own ideas to serve the client\'s needs.',
   },
 ];
 

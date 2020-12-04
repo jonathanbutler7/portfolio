@@ -1,5 +1,5 @@
-.main, .darkMain {
-    
+.main,
+.darkMain {
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -10,10 +10,12 @@
 .main {
     background: var(--color-gray1);
 }
+
 .darkMain {
     background: var(--dark-lightgray);
     color: var(--dark-accent);
 }
+
 h1 {
     margin-bottom: 2rem;
 }
@@ -23,15 +25,18 @@ h1 {
     display: flex;
 }
 
-@media only screen and (max-width: 920px) {
-    .main {
-        height: 200vh;
+@media only screen and (max-width: 1250px) {
+    .main,
+    .darkMain {
+        height: 180vh;
         justify-content: space-between;
     }
+
     .cards {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     h1 {
         margin-top: 2rem;
     }
-  }
+}

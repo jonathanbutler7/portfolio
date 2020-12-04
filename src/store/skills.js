@@ -13,7 +13,7 @@ const softSkills = [
   {
     title: 'motivation',
     detail:
-      'when i finished my dissertation remotely, i was required to stay disciplined and motivated to tackle a large goal.',
+      'when i finished my dissertation remotely, i stayed disciplined and motivated to tackle a large goal.',
   },
   {
     title: 'leadership',

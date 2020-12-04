@@ -9,7 +9,7 @@ function Footer() {
   const { isDarkMode } = useContext(Context);
   
   return (
-    <div className={isDarkMode ? styles.darkMain : styles.main} id='contact'>
+    <footer className={isDarkMode ? styles.darkMain : styles.main} id='contact'>
       <div className={styles.iconContainer}>
         <a target='blank' href={linkedIn}>
           <GrLinkedin />
@@ -21,7 +21,7 @@ function Footer() {
           <VscMail />
         </a>
       </div>
-    </div>
+    </footer>
   );
 }
 

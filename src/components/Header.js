@@ -11,21 +11,21 @@ function Header() {
   const [menu, showMenu] = useState(false);
   console.log(menu);
   return (
-    <nav className={isDarkMode ? styles.navDark : styles.nav}>
+    <header className={isDarkMode ? styles.navDark : styles.nav}>
       <GiHamburgerMenu
         className={styles.hamburger}
         onClick={() => showMenu(!menu)}
       />
       {menu && <Hamburger />}
       <div className={styles.left}>
-        <code>Jonathan drinks</code>
+        <code>jonathan drinks</code>
         <h1 onClick={() => emojisplosion()}>☕</h1>
         <code>while he codes.</code>
       </div>
       <div className={styles.right}>
         <Switch className={styles.switch} />
       </div>
-    </nav>
+    </header>
   );
 }
 

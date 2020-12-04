@@ -8,14 +8,14 @@ function NavBar() {
   const { isDarkMode } = useContext(PortfolioContext);
 
   return (
-    <div className={isDarkMode ? styles.navBarDark : styles.navBar}>
+    <nav className={isDarkMode ? styles.navBarDark : styles.navBar}>
       <ProjectsContactResume />
       <section className={styles.right}>
         <button onClick={() => emojisplosion()}>
           <h5>do not click here</h5>
         </button>
       </section>
-    </div>
+    </nav>
   );
 }
 

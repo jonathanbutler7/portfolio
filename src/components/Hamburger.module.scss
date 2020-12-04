@@ -1,0 +1,19 @@
+.main, .darkMain {
+    padding: 1rem;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    transition: var(--transition);
+    transform: translate(20px);
+    h1 {
+        font-size: 40px;
+    }
+}
+
+.main {
+    background: var(--color-darkteal);
+}
+
+.darkMain {
+    background: var(--dark-gray);
+}

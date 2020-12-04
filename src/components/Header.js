@@ -1,21 +1,29 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import styles from './Header.module.scss';
 import Switch from './Switch';
 import Context from '../store/context';
-import { GiHamburgerMenu } from 'react-icons/gi'
+import Hamburger from './Hamburger';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { emojisplosion } from 'emojisplosion';
+
 function Header() {
   const { isDarkMode } = useContext(Context);
-  
+  const [menu, showMenu] = useState(false);
+  console.log(menu)
   return (
     <nav className={isDarkMode ? styles.navDark : styles.nav}>
-      <GiHamburgerMenu />
+      <div className={styles.hamburger}>
+      <GiHamburgerMenu  onClick={() => showMenu(!menu)} />
+
+      </div>
+      {menu && <Hamburger />}
       <div className={styles.left}>
         <code>Jonathan drinks</code>
-        <h1>☕</h1>
+        <h1 onClick={() => emojisplosion()}>☕</h1>
         <code>while he codes.</code>
       </div>
       <div className={styles.right}>
-        <Switch />
+        <Switch className={styles.switch}/>
       </div>
     </nav>
   );

@@ -9,6 +9,8 @@
     h1 {
         margin: 0 .5rem 0 .5rem;
     }
+
+
 }
 
 .nav {
@@ -28,12 +30,32 @@
     align-items: center;
 }
 
+
+@media only screen and (min-width: 920px) {
+    .hamburger {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 920px) {
+
     .nav code,
     .navDark code {
         display: none;
     }
-    svg {
+
+    .nav h1,
+    .navDark h1 {
+        font-size: 3rem;
+    }
+
+    .hamburger {
+        display: inline-block;
+        position: relative;
+        font-size: 3rem;
+    }
+
+    .switch {
         height: 3rem;
         width: 3rem;
     }

@@ -17,3 +17,9 @@
 .darkMain {
     background: var(--dark-gray);
 }
+
+@media only screen and (min-width: 921px) {
+    .main, .darkMain {
+        display: none;
+    }
+}

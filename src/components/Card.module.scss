@@ -108,3 +108,12 @@ button {
         justify-content: flex-end;
     }
 }
+@media only screen and (max-width: 351px) {
+    .card, .darkCard {
+        min-width: 0px;
+        width: 100%;
+        flex-direction: column;
+        margin: 2rem auto;
+        justify-content: flex-end;
+    }
+}

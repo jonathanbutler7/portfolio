@@ -1,4 +1,5 @@
-.main, .mainDark {
+.main,
+.mainDark {
     height: 61vh;
     position: relative;
     display: flex;
@@ -10,12 +11,12 @@
         background: var(--color-darkteal);
         transition: var(--transition);
     }
-    
+
     .lightBox {
         background: var(--color-teal);
         transition: var(--transition);
     }
-    
+
     .purpleBox {
         background: var(--color-purple);
         left: 1rem;
@@ -27,16 +28,17 @@
 .mainDark {
     background: var(--dark-gray);
     transition: var(--transition);
+
     .greenBox {
         background: var(--color-darkteal);
         transition: var(--transition);
     }
-    
+
     .lightBox {
         background: var(--color-purple);
         transition: var(--transition);
     }
-    
+
     .purpleBox {
         transition: var(--transition);
         background: pink;
@@ -55,6 +57,7 @@
 
 .left {
     margin: 0 auto;
+
     h1 {
         // margin: 0 auto;
         padding: 2rem;
@@ -80,24 +83,41 @@
 }
 
 @media only screen and (max-width: 920px) {
-    .main, .mainDark {
-      flex-direction: column;
-      margin: 0;
-      height: 80vh;
+
+    .main,
+    .mainDark {
+        flex-direction: column;
+        margin: 0;
+        height: 80vh;
     }
-    .purpleBox, .greenBox, .lightBox {
+
+    .purpleBox,
+    .greenBox,
+    .lightBox {
         width: 80vw;
         height: 35vh;
     }
+
     .purpleBox {
         left: 1rem;
 
     }
-    .greenBox, .lightBox {
+
+    .greenBox,
+    .lightBox {
         left: 3rem;
         top: 2rem;
     }
+
     .left h1 {
         padding: 0;
     }
-  }
+}
+
+@media only screen and (max-width: 351px) {
+
+    .main,
+    .darkMain {
+        height: 100vh;
+    }
+}

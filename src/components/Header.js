@@ -9,13 +9,13 @@ import { emojisplosion } from 'emojisplosion';
 function Header() {
   const { isDarkMode } = useContext(Context);
   const [menu, showMenu] = useState(false);
-  console.log(menu)
+  console.log(menu);
   return (
     <nav className={isDarkMode ? styles.navDark : styles.nav}>
-      <div className={styles.hamburger}>
-      <GiHamburgerMenu  onClick={() => showMenu(!menu)} />
-
-      </div>
+      <GiHamburgerMenu
+        className={styles.hamburger}
+        onClick={() => showMenu(!menu)}
+      />
       {menu && <Hamburger />}
       <div className={styles.left}>
         <code>Jonathan drinks</code>
@@ -23,7 +23,7 @@ function Header() {
         <code>while he codes.</code>
       </div>
       <div className={styles.right}>
-        <Switch className={styles.switch}/>
+        <Switch className={styles.switch} />
       </div>
     </nav>
   );

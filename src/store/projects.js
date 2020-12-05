@@ -15,7 +15,7 @@ const projects = [
     title: 'space x',
     code: spaceXCode,
     live: spaceXApp,
-    icon: <GoPencil />,
+    icon: <FaSpaceShuttle />,
     technologies: 'built using jQuery, NASA, and Space-X APIs',
   },
   {
@@ -29,7 +29,7 @@ const projects = [
     title: 'quiz',
     code: quizApp,
     live: quizCode,
-    icon: <FaSpaceShuttle />,
+    icon: <GoPencil />,
     technologies: 'built using jQuery, knowledge of The Office',
   },
 ];

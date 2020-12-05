@@ -9,13 +9,12 @@ import { emojisplosion } from 'emojisplosion';
 function Header() {
   const { isDarkMode } = useContext(Context);
   const [menu, showMenu] = useState(false);
-  
+
   return (
     <header className={isDarkMode ? styles.navDark : styles.nav}>
-      <GiHamburgerMenu
-        className={styles.hamburger}
-        onClick={() => showMenu(!menu)}
-      />
+      <div className={styles.hamburger}>
+        <GiHamburgerMenu onClick={() => showMenu(!menu)} />
+      </div>
       {menu && <Hamburger />}
       <div className={styles.left}>
         <code>jonathan drinks</code>

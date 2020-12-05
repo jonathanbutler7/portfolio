@@ -1,13 +1,13 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from './Footer.module.scss';
 import { GrLinkedin, GrGithub } from 'react-icons/gr';
 import { VscMail } from 'react-icons/vsc';
 import { linkedIn, github, email } from '../store/links';
-import Context from '../store/context';
+import { usePort } from '../store/context';
 
 function Footer() {
-  const { isDarkMode } = useContext(Context);
-  
+  const { isDarkMode } = usePort();
+
   return (
     <footer className={isDarkMode ? styles.darkMain : styles.main} id='contact'>
       <div className={styles.iconContainer}>

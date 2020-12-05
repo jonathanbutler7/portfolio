@@ -1,5 +1,21 @@
-import { createContext } from 'react';
+import React, { useContext, useState } from 'react';
+const PortfolioContext = React.createContext();
 
-const Context = createContext({});
+export function usePort() {
+  return useContext(PortfolioContext);
+}
 
-export default Context;
+export function PortProvider({ children }) {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const value = {
+    isDarkMode,
+    setIsDarkMode,
+  };
+
+  return (
+    <PortfolioContext.Provider value={value}>
+      {children}
+    </PortfolioContext.Provider>
+  );
+}

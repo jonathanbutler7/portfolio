@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from './Card.module.scss';
-import Context from '../store/context';
+import { usePort } from '../store/context';
 
 function Card({ project }) {
-  const { isDarkMode } = useContext(Context);
+  const { isDarkMode } = usePort();
   const { title, icon, technologies, code, live } = project;
-  
+
   return (
     <div className={isDarkMode ? styles.darkCard : styles.card}>
       <div className={styles.circle}>{icon}</div>

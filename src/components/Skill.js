@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from './Skill.module.scss';
-import Context from '../store/context';
+import { usePort } from '../store/context';
 
 function Skill({ skill, setText, setHoverActive }) {
-  const { isDarkMode } = useContext(Context);
-  
+  const { isDarkMode } = usePort();
+
   function switchItUp(boolean, str) {
     setText(str);
     setHoverActive(boolean);

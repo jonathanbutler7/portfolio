@@ -27,8 +27,8 @@ const projects = [
   },
   {
     title: 'quiz',
-    code: quizApp,
-    live: quizCode,
+    code: quizCode,
+    live: quizApp,
     icon: <GoPencil />,
     technologies: 'built using jQuery, knowledge of The Office',
   },

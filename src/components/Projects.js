@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from './Projects.module.scss';
 import Card from './Card';
-import Context from '../store/context';
+import { usePort } from '../store/context';
 import { projects } from '../store/projects';
 
 function Projects() {
-  const { isDarkMode } = useContext(Context);
-  
+  const { isDarkMode } = usePort();
+
   return (
     <div className={isDarkMode ? styles.darkMain : styles.main} id='projects'>
       <h1>stuff i built</h1>

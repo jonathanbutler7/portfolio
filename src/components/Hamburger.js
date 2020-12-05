@@ -10,6 +10,7 @@ function Hamburger() {
     <main className={isDarkMode ? styles.darkMain : styles.main}>
       <section className={styles.left}>
         <ProjectsContactResume />
+        <code>(just tap the coffee...)</code>
       </section>
     </main>
   );

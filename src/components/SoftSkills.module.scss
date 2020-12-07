@@ -19,7 +19,7 @@
 
     .purpleBox {
         background: var(--color-purple);
-        left: 1rem;
+        left: 2rem;
         top: 1rem;
         transition: var(--transition);
     }
@@ -42,8 +42,8 @@
     .purpleBox {
         transition: var(--transition);
         background: pink;
-        left: 1rem;
-        top: 1rem;
+        left: 2rem;
+        top: 2rem;
     }
 }
 
@@ -102,15 +102,18 @@
         height: 35vh;
     }
 
-    .purpleBox {
-        left: 1rem;
-
-    }
+    // .purpleBox {
+    //     left: 1rem;
+    //     top: 1rem;
+    // }
 
     .greenBox,
     .lightBox {
-        left: 3rem;
+        left: 4rem;
         top: 2rem;
+    }
+    .right {
+        padding: 0;
     }
 
     .left h1 {

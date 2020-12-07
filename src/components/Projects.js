@@ -11,8 +11,8 @@ function Projects() {
     <div className={isDarkMode ? styles.darkMain : styles.main} id='projects'>
       <h1>stuff i built</h1>
       <div className={styles.cards}>
-        {projects.map((project) => (
-          <Card project={project} key={project.title} />
+        {projects.map((project, idx) => (
+          <Card project={project} key={idx} idx={idx} />
         ))}
       </div>
     </div>

@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react';
 import styles from './Card.module.scss';
 import { usePort } from '../store/context';
-import Aos from 'aos';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function Card({ project, idx }) {
+function Card({ project }) {
   const { isDarkMode } = usePort();
-  const { title, icon, technologies, code, live } = project;
-
+  const { title, icon, technologies, code, live, duration, fade } = project;
   useEffect(() => {
-    Aos.init({ duration: 2000, delay: 2000, mirror: true });
+    AOS.init({});
   }, []);
 
   return (
     <div
-      // data-aos='fade-up'
       className={isDarkMode ? styles.darkCard : styles.card}
+      aos-duration={duration}
+      data-aos={fade}
     >
       <div className={styles.circle}>{icon}</div>
       <div className={styles.titleContainer}>

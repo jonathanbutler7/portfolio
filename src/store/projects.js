@@ -17,6 +17,8 @@ const projects = [
     live: spaceXApp,
     icon: <FaSpaceShuttle />,
     technologies: 'built using jQuery, NASA, and Space-X APIs',
+    duration: 50,
+    fade: 'fade-up'
   },
   {
     title: 'notes',
@@ -24,6 +26,8 @@ const projects = [
     live: notefulApp,
     icon: <GrNotes />,
     technologies: 'built using the PERN stack',
+    duration: 1000,
+    fade: 'fade-down'
   },
   {
     title: 'quiz',
@@ -31,6 +35,8 @@ const projects = [
     live: quizApp,
     icon: <GoPencil />,
     technologies: 'built using jQuery, knowledge of The Office',
+    duration: 3000,
+    fade: 'fade-left'
   },
 ];
 

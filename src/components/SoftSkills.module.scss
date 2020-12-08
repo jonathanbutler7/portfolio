@@ -43,7 +43,7 @@
         transition: var(--transition);
         background: pink;
         left: 2rem;
-        top: 2rem;
+        top: 1rem;
     }
 }
 
@@ -85,6 +85,9 @@
     left: 5rem;
     top: 5rem;
 }
+@media only screen and (min-width: 921px) {
+
+}
 
 @media only screen and (max-width: 920px) {
 
@@ -93,6 +96,10 @@
         flex-direction: column;
         margin: 0;
         height: 80vh;
+        .purpleBox {
+            left: 1rem;
+            
+        }
     }
 
     .purpleBox,
@@ -102,10 +109,7 @@
         height: 35vh;
     }
 
-    // .purpleBox {
-    //     left: 1rem;
-    //     top: 1rem;
-    // }
+    
 
     .greenBox,
     .lightBox {

@@ -7,8 +7,9 @@ import 'aos/dist/aos.css';
 function Card({ project }) {
   const { isDarkMode } = usePort();
   const { title, icon, technologies, code, live, duration, fade } = project;
+  
   useEffect(() => {
-    AOS.init({});
+    AOS.init({mirror: false});
   }, []);
 
   return (

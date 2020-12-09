@@ -9,7 +9,7 @@ It makes use of flexbox and I incorporated dark mode with useContext.\
 I also used it as an opportunity to try to create several different design themes.\
 I will be updating the design over time.
 
-It may be viewed live at: https://jonathan-butler.herokuapp.com/
+It may be viewed live by clicking [here](https://jonathan-butler.herokuapp.com/).
 
 It's fully responsive, so go ahead, try it in mobile, too!
 

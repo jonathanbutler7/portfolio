@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is my portfolio project in which houses my most recent work as a developer.\
 It makes use of flexbox and I incorporated dark mode with useContext.\
+I also used it as an opportunity to try to create several different design themes.\
+I will be updating the design over time.
+
+It may be viewed live at: https://jonathan-butler.herokuapp.com/
 
 It's fully responsive, so go ahead, try it in mobile, too!
 

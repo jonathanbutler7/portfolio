@@ -1,4 +1,4 @@
-![alt text](https://storage.googleapis.com/portfolio-website-content/space-x.png)
+![alt text](https://storage.googleapis.com/portfolio-website-content/portfolio-mobile.png)
 
 # Getting Started with Create React App
 

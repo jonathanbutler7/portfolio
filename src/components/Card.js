@@ -1,33 +1,41 @@
-import React, { useContext } from 'react';
+import React, { useEffect } from 'react';
 import styles from './Card.module.scss';
-import { GrReactjs, GrNode, GrNotes } from 'react-icons/gr';
-import { SiJquery, SiPostgresql } from 'react-icons/si';
-import { FaSpaceShuttle } from 'react-icons/fa'
-import { GoPencil } from 'react-icons/go'
-import Context from '../store/context';
+import { usePort } from '../store/context';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+function Card({ project }) {
+  const { isDarkMode } = usePort();
+  const { title, icon, technologies, code, live, duration, fade } = project;
+  
+  useEffect(() => {
+    AOS.init({mirror: false});
+  }, []);
 
-function Card({ title }) {
-  const { isDarkMode } = useContext(Context);
   return (
-    <div className={isDarkMode ? styles.darkCard : styles.card}>
-      <div className={styles.circle}>
-        {title === 'notes' && <GrNotes />}
-        {title === 'quiz' && <GoPencil />}
-        {title === 'space x' && <FaSpaceShuttle style={{transform: 'rotate(-90deg)'}}/>}
-      </div>
+    <div
+      className={isDarkMode ? styles.darkCard : styles.card}
+      aos-duration={duration}
+      data-aos={fade}
+    >
+      <div className={styles.circle}>{icon}</div>
       <div className={styles.titleContainer}>
         <h1>{title}</h1>
       </div>
       <div className={styles.technologies}>
-        <GrReactjs />
-        <SiJquery />
-        <SiPostgresql />
-        <GrNode />
+        <p>{technologies}</p>
       </div>
       <div className={styles.buttonContainer}>
-        <button>code</button>
-        <button>live</button>
+        <a href={code} target='blank'>
+          <button>
+            <code>code</code>
+          </button>
+        </a>
+        <a href={live} target='blank'>
+          <button>
+            <code>live</code>
+          </button>
+        </a>
       </div>
     </div>
   );

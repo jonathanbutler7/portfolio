@@ -1,8 +1,9 @@
-.main, .mainDark {
+.main,
+.mainDark {
     height: 61vh;
     position: relative;
     display: flex;
-    padding: 4rem;
+    // padding: 4rem;
 }
 
 .main {
@@ -10,15 +11,15 @@
         background: var(--color-darkteal);
         transition: var(--transition);
     }
-    
+
     .lightBox {
         background: var(--color-teal);
         transition: var(--transition);
     }
-    
+
     .purpleBox {
         background: var(--color-purple);
-        left: 1rem;
+        left: 2rem;
         top: 1rem;
         transition: var(--transition);
     }
@@ -27,20 +28,21 @@
 .mainDark {
     background: var(--dark-gray);
     transition: var(--transition);
+
     .greenBox {
         background: var(--color-darkteal);
         transition: var(--transition);
     }
-    
+
     .lightBox {
         background: var(--color-purple);
         transition: var(--transition);
     }
-    
+
     .purpleBox {
         transition: var(--transition);
         background: pink;
-        left: 1rem;
+        left: 2rem;
         top: 1rem;
     }
 }
@@ -55,10 +57,15 @@
 
 .left {
     margin: 0 auto;
+
     h1 {
         // margin: 0 auto;
         padding: 2rem;
     }
+}
+
+.right {
+    padding: 2rem;
 }
 
 .greenBox,
@@ -78,23 +85,50 @@
     left: 5rem;
     top: 5rem;
 }
+@media only screen and (min-width: 921px) {
+
+}
 
 @media only screen and (max-width: 920px) {
-    .main {
-      flex-direction: column;
-      margin: 0;
-      height: 80vh;
+
+    .main,
+    .mainDark {
+        flex-direction: column;
+        margin: 0;
+        height: 80vh;
+        .purpleBox {
+            left: 1rem;
+            
+        }
     }
-    .purpleBox, .greenBox, .lightBox {
+
+    .purpleBox,
+    .greenBox,
+    .lightBox {
         width: 80vw;
         height: 35vh;
     }
-    .purpleBox {
-        left: 1rem;
 
-    }
-    .greenBox, .lightBox {
-        left: 3rem;
+    
+
+    .greenBox,
+    .lightBox {
+        left: 4rem;
         top: 2rem;
     }
-  }
+    .right {
+        padding: 0;
+    }
+
+    .left h1 {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 351px) {
+
+    .main,
+    .darkMain {
+        height: 100vh;
+    }
+}

@@ -1,19 +1,23 @@
 import './styles/main.css';
-import { useState } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import { components } from './store/components';
-import Context from './store/context';
+import NavBar from './components/Header';
+import SelectBar from './components/NavBar';
+import Footer from './components/Footer';
+import About from './components/About';
+import SoftSkills from './components/SoftSkills';
+import Projects from './components/Projects';
+import { PortProvider } from './store/context';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+
   return (
-    <BrowserRouter>
-      <Context.Provider value={{ isDarkMode, setIsDarkMode }}>
-        {components.map((component) => (
-          <Route path='/' component={component} key={component} className='light-theme' />
-        ))}
-      </Context.Provider>
-    </BrowserRouter>
+    <PortProvider>
+      <NavBar />
+      <SelectBar />
+      <About />
+      <SoftSkills />
+      <Projects />
+      <Footer />
+    </PortProvider>
   );
 }
 

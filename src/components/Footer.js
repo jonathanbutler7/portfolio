@@ -1,12 +1,15 @@
 import React from 'react';
-import styles from './Contact.module.scss';
+import styles from './Footer.module.scss';
 import { GrLinkedin, GrGithub } from 'react-icons/gr';
 import { VscMail } from 'react-icons/vsc';
 import { linkedIn, github, email } from '../store/links';
+import { usePort } from '../store/context';
 
-function Contact() {
+function Footer() {
+  const { isDarkMode } = usePort();
+
   return (
-    <div className={styles.main} id='contact'>
+    <footer className={isDarkMode ? styles.darkMain : styles.main} id='contact'>
       <div className={styles.iconContainer}>
         <a target='blank' href={linkedIn}>
           <GrLinkedin />
@@ -18,8 +21,8 @@ function Contact() {
           <VscMail />
         </a>
       </div>
-    </div>
+    </footer>
   );
 }
 
-export default Contact;
+export default Footer;

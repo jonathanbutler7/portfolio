@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import { PortProvider } from './store/context';
 
 function App() {
+
   return (
     <PortProvider>
       <NavBar />

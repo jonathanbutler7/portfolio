@@ -16,6 +16,7 @@ function Skill({ skill, setText, setHoverActive }) {
       onMouseEnter={() => switchItUp(true, skill.detail)}
       onMouseLeave={() => switchItUp(false, 'i bring to the table...')}
     >
+      <img src={skill.icon} alt={skill.icon}/>
       <h2>{skill.title}</h2>
     </div>
   );

@@ -8,17 +8,24 @@
     min-width: 300px;
     justify-content: center;
     align-items: center;
+
     &:hover {
         background: gainsboro;
         text-decoration: underline;
         transition: var(--transition);
 
     }
+
+    img {
+        height: 4rem;
+        width: 4rem;
+    }
 }
 
 .main {
     border-left: 15px solid var(--color-purple);
     background: var(--color-gray2);
+
     &:hover {
         border-left: 15px solid var(--color-teal);
         transition: var(--transition);
@@ -29,6 +36,7 @@
 .mainDark {
     background: var(--color-gray2);
     border-left: 15px solid var(--color-pink);
+
     &:hover {
         border-left: 15px solid var(--color-purple);
         transition: var(--transition);

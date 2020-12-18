@@ -12,12 +12,12 @@ function App() {
 
   return (
     <PortProvider>
-      <Carousel />
       <NavBar />
       <SelectBar />
       <About />
-      <SoftSkills />
       <Projects />
+      <Carousel />
+      {/* <SoftSkills /> */}
       <Footer />
     </PortProvider>
   );

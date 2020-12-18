@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   CarouselProvider,
   Slide,
@@ -5,96 +6,78 @@ import {
   ButtonBack,
   ButtonNext,
 } from 'pure-react-carousel';
-import React from 'react';
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
-
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
-const slides = [
-  {
-    title: 'problem solving',
-    detail:
-      'i thrive when i am confronted with a problem larger than my current skillset.',
-    icon:
-      'https://storage.googleapis.com/portfolio-website-content/problem-solving-icon.svg',
-  },
-  {
-    title: 'collaboration',
-    detail:
-      'as a musician, my entire career was dependent on my ability to work well with others.',
-    icon:
-      'https://storage.googleapis.com/portfolio-website-content/collaboration-icon.svg',
-  },
-  {
-    title: 'motivation',
-    detail:
-      'when i finished my dissertation remotely, i stayed disciplined and motivated to tackle a large goal.',
-    icon:
-      'https://storage.googleapis.com/portfolio-website-content/movitation-icon.svg',
-  },
-  {
-    title: 'leadership',
-    detail:
-      "leaders lay down their goals, and i gladly lay down my own ideas to serve the client's needs.",
-    icon:
-      'https://storage.googleapis.com/portfolio-website-content/leadership-icon.svg',
-  },
-];
-
-const style = {
-  background: 'pink',
-  borderRadius: '500px',
-  margin: '0 1rem',
-  height: '100%',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-};
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import style from './Carousel.module.scss';
+import { softSkills } from '../store/skills';
+import Skill1 from './Skill1';
 
 function App1() {
   return (
-    <CarouselProvider
-      naturalSlideWidth={80}
-      naturalSlideHeight={70}
-      totalSlides={4}
-      visibleSlides={3}
-      infinite={true}
-      isIntrinsicHeight={false}
-    >
-      <Slider style={{ margin: '5rem 0' }}>
-        {slides.map((slide, i) => (
-          <Slide index={i} key={i}>
-            <div style={style}>
-              <p>{slide.title}</p>
-              <img
-                src={slide.icon}
-                alt=''
-                style={{ height: '4rem', width: '4rem' }}
-              />
-            </div>
-          </Slide>
-        ))}
-      </Slider>
-      <div
-        style={{
-          display: 'flex',
-          width: '100%',
-          justifyContent: 'center',
-          background: 'pink',
-        }}
+    <>
+      <h2 style={{margin: '2rem'}}>I bring to the table...</h2>
+      <CarouselProvider
+        naturalSlideWidth={80}
+        naturalSlideHeight={40}
+        totalSlides={7}
+        visibleSlides={3}
+        infinite={true}
+        isIntrinsicHeight={false}
+        style={{ margin: '0 3rem' }}
       >
-        <ButtonBack style={{ border: 'none', background: 'none' }}>
-          <AiOutlineArrowLeft
-            style={{ height: '2rem', width: '2rem', float: 'left' }}
-          />
-        </ButtonBack>
-        <ButtonNext style={{ border: 'none', background: 'none' }}>
-          <AiOutlineArrowRight
-            style={{ height: '2rem', width: '2rem', float: 'right' }}
-          />
-        </ButtonNext>
-      </div>
-    </CarouselProvider>
+        <Slider style={{ margin: '5rem 0' }}>
+          {softSkills.map((skill, i) => (
+            <Slide index={i} key={i}>
+              <div
+              className={style.circle}
+              >
+                <Skill1 key={i} skill={skill} />
+              </div>
+            </Slide>
+          ))}
+        </Slider>
+        <div
+          style={{
+            display: 'flex',
+            width: '100%',
+            justifyContent: 'center',
+            background: 'pink',
+            position: 'relative',
+          }}
+        >
+          <ButtonBack
+            style={{
+              border: 'none',
+              background: 'black',
+              position: 'absolute',
+              width: '45px',
+              left: '0px',
+              top: '-250px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <AiOutlineArrowLeft style={{ height: '2rem', width: '2rem' }} />
+          </ButtonBack>
+          <ButtonNext
+            style={{
+              border: 'none',
+              background: 'black',
+              position: 'absolute',
+              width: '45px',
+              right: '0px',
+              top: '-250px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <AiOutlineArrowRight style={{ height: '2rem', width: '2rem' }} />
+          </ButtonNext>
+        </div>
+      </CarouselProvider>
+    </>
   );
 }
 export default App1;

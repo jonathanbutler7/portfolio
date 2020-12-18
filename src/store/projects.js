@@ -18,7 +18,8 @@ const projects = [
     icon: <FaSpaceShuttle />,
     technologies: 'built using jQuery, NASA, and Space-X APIs',
     duration: 50,
-    fade: 'fade-up'
+    fade: 'fade-up',
+    macbook: 'https://storage.googleapis.com/portfolio-website-content/thumbnail-MacBook-Pro-16-inch_2x.png'
   },
   {
     title: 'notes',
@@ -27,7 +28,8 @@ const projects = [
     icon: <GrNotes />,
     technologies: 'built using the PERN stack',
     duration: 1000,
-    fade: 'fade-down'
+    fade: 'fade-down',
+    macbook: 'https://storage.googleapis.com/portfolio-website-content/thumbnail-MacBook-Pro-16-inch_2x.png'
   },
   {
     title: 'quiz',
@@ -36,7 +38,8 @@ const projects = [
     icon: <GoPencil />,
     technologies: 'built using jQuery, knowledge of The Office',
     duration: 3000,
-    fade: 'fade-left'
+    fade: 'fade-left',
+    macbook: 'https://storage.googleapis.com/portfolio-website-content/thumbnail-MacBook-Pro-16-inch_2x.png'
   },
 ];
 

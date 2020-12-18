@@ -1,0 +1,39 @@
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: pink;
+    position: relative;
+}
+
+.buttonLeft {
+    border: none;
+    background: black;
+    position: absolute;
+    width: 45px;
+    left: 0px;
+    top: -250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    color: white;
+}
+
+.buttonRight {
+    border: none;
+    background: black;
+    position: absolute;
+    width: 45px;
+    right: 0px;
+    top: -250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    color: white;
+}

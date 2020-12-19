@@ -5,7 +5,7 @@ import { projects } from '../store/projects';
 
 export default function Projects1() {
   return (
-    <div>
+    <div id='projects'>
       {projects.map((project, i) => (
         <div className={style.project} key={i}>
           <div className={style.container}>

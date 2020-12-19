@@ -349,6 +349,10 @@ button {
   border-radius: 30px;
 }
 
+a {
+  border-radius: 30px;
+}
+
 /**
  * Work around a Firefox/IE bug where the transparent `button` background
  * results in a loss of the default `button` focus styles.

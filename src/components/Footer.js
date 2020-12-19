@@ -14,11 +14,11 @@ function Footer() {
         <a target='blank' href={linkedIn}>
           <GrLinkedin />
         </a>
+        <a href={email} id='mail'>
+          <VscMail />
+        </a>
         <a target='blank' href={github}>
           <GrGithub />
-        </a>
-        <a href={email}>
-          <VscMail />
         </a>
       </div>
     </footer>

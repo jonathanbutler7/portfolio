@@ -10,7 +10,7 @@ import {
 
 const softSkills = [
   {
-    title: 'problem solving',
+    title: 'Problem solving',
     detail:
       'I thrive when I am confronted with a problem larger than my current skillset.',
     icon: problemSolving,
@@ -30,13 +30,13 @@ const softSkills = [
   {
     title: 'Leadership',
     detail:
-      "Leaders lay down their goals, and i gladly lay down my own ideas to serve the client's needs.",
+      "Leaders lay down their goals, and I gladly lay down my own ideas to serve the client's needs.",
     icon: leadership,
   },
   {
     title: 'Knowledge sharing',
     detail:
-      "It's important to be able to explain what I know so I can share the knowledge.",
+      "It's important to be able to explain what I know so I can share the knowledge and help others learn.",
     icon: knowledge,
   },
   {

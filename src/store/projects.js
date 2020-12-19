@@ -12,39 +12,33 @@ import { FaSpaceShuttle } from 'react-icons/fa';
 
 const projects = [
   {
-    title: 'notes',
+    title: 'Noteful',
     code: notefulCode,
     live: notefulApp,
     icon: <GrNotes />,
-    technologies: 'built using the PERN stack',
-    duration: 1000,
-    fade: 'fade-down',
+    technologies: 'uses PERN stack',
     macbook:
       'https://storage.googleapis.com/portfolio-website-content/thumbnail-MacBook-Pro-16-inch_2x.png',
     description:
       "This full stack app supports CRUD requests for /folders and /notes and supports sign up and sign in for /login, storing the user's encrypted passwords in the database.",
   },
   {
-    title: 'space x',
+    title: 'Space X',
     code: spaceXCode,
     live: spaceXApp,
     icon: <FaSpaceShuttle />,
-    technologies: 'built using jQuery, NASA, and Space-X APIs',
-    duration: 50,
-    fade: 'fade-up',
+    technologies: 'uses jQuery, NASA, and Space-X APIs',
     macbook:
       'https://storage.googleapis.com/portfolio-website-content/thumbnail-MacBook-Pro-16-inch_2x.png',
     description:
       'This mobile response app uses jQuery to consume the Space X and NASA APIs.',
   },
   {
-    title: 'quiz',
+    title: 'Quiz App',
     code: quizCode,
     live: quizApp,
     icon: <GoPencil />,
-    technologies: 'built using jQuery, knowledge of The Office',
-    duration: 3000,
-    fade: 'fade-left',
+    technologies: 'uses jQuery, knowledge of The Office',
     macbook:
       'https://storage.googleapis.com/portfolio-website-content/thumbnail-MacBook-Pro-16-inch_2x.png',
     description:

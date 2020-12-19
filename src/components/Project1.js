@@ -1,33 +1,24 @@
 import React from 'react';
 import style from './Project1.module.scss';
+import ProjectButtons from './ProjectButtons';
 import { projects } from '../store/projects';
 
 export default function Projects1() {
   return (
     <div>
-      {projects.map((project) => (
-        <div className={style.project}>
-          <div className={style.img}>
-            <img src={project.macbook} alt='' />
-          </div>
-          <div className={style.textContainer}>
-            <div className={style.text}>
-            <h1>{project.title}</h1>
-            <h5>{project.technologies}</h5>
-            <p>{project.description}</p>
-
+      {projects.map((project, i) => (
+        <div className={style.project} key={i}>
+          <div className={style.container}>
+            <div className={style.img}>
+              <img src={project.macbook} alt='macbook' />
             </div>
-            <div className={style.buttonContainer}>
-              <a href={project.code} target='blank'>
-                <button>
-                  <code>code</code>
-                </button>
-              </a>
-              <a href={project.live} target='blank'>
-                <button>
-                  <code>live</code>
-                </button>
-              </a>
+            <div className={style.textContainer}>
+              <h1>{project.title}</h1>
+              <div className={style.text}>
+                <h5>{project.technologies}</h5>
+                <p>{project.description}</p>
+              </div>
+              <ProjectButtons project={project} />
             </div>
           </div>
         </div>

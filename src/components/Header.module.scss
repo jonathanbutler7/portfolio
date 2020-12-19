@@ -16,7 +16,8 @@
 }
 
 .nav {
-    background: var(--color-purple);
+    // background: var(--color-purple);
+    background: var(--color-darkblue);
     color: var(--color-white);
     transition: var(--transition);
 }
@@ -61,13 +62,16 @@
     .right {
         flex: 1;
     }
+
     .left {
         justify-content: center;
     }
+
     .right {
         display: flex;
         justify-content: flex-end;
     }
+
     .hamburger {
         display: inline-block;
         position: relative;

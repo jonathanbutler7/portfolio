@@ -12,15 +12,19 @@
     h1 {
         margin: 0 1rem 0 2rem;
     }
+
+    button {
+        width: 11rem;
+        height: 3rem;
+    }
 }
+
 
 .navBar {
     background: var(--color-gray1);
     transition: var(--transition);
 
     button {
-        width: 11rem;
-        height: 3rem;
         background: var(--color-green);
         color: var(--color-white);
     }
@@ -32,7 +36,6 @@
     transition: var(--transition);
 
     button {
-        width: 11rem;
         background: var(--dark-purple);
         color: white;
     }

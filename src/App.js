@@ -13,9 +13,8 @@ function App() {
       <NavBar />
       <SelectBar />
       <About />
-      <Project1 />
       <Carousel />
-      {/* <SoftSkills /> */}
+      <Project1 />
       <Footer />
     </PortProvider>
   );

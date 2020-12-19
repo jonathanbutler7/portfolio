@@ -21,12 +21,12 @@
 
 
 .navBar {
-    background: var(--color-gray1);
+    background: var(--light-background);
     transition: var(--transition);
-
+    border-bottom: 1px solid var(--light-headline);
     button {
-        background: var(--color-green);
-        color: var(--color-white);
+        background: var(--light-tertiary);
+        color: var(--light-button-text);
     }
 }
 

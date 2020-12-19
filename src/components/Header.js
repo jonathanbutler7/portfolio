@@ -22,7 +22,7 @@ function Header() {
         <code>while he codes.</code>
       </div>
       <div className={styles.right}>
-        <Switch className={styles.switch} />
+        {/* <Switch className={styles.switch} /> */}
       </div>
     </header>
   );

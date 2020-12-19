@@ -45,7 +45,30 @@ Use a more readable tab size (opinionated).
   --dark-accent: #D5D5D5;
   --dark-purple: #C38FFF;
   --dark-pink: #EA80FC;
+  --light-background: #fffffe;
+  --light-headline: #2b2c34;
+  --light-paragraph: #2b2c34;
+  --light-button: #6246ea;
+  --light-button-text: #fffffe;
+  --light-stroke: #2b2c34;
+  --light-main: #fffffe;
+  --light-highlight: #6246ea;
+  --light-secondary: #d1d1e9;
+  --light-tertiary: #e45858;
+
+  --dark-background: #16161a;
+  --dark-headline: #fffffe;
+  --dark-paragraph: #94a1b2;
+  --dark-button: #7f5af0;
+  --dark-button-text: #fffffe;
+  --dark-stroke: #010101;
+  --dark-main: #fffffe;
+  --dark-highlight: #7f5af0;
+  --dark-secondary: #72757e;
+  --dark-tertiary: #2cb67d;
+
   --transition: all 0.5s ease-in-out;
+
 }
 
 /**

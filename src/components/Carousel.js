@@ -39,7 +39,7 @@ function Carousel() {
 
   return (
     <div style={{ borderTop: '1px solid gainsboro' }}>
-      {/* <h2 style={{ padding: '2rem' }}>I bring to the table...</h2> */}
+      <h2 style={{ padding: '2rem' }}>I bring to the table...</h2>
       <CarouselProvider
         naturalSlideWidth={80}
         naturalSlideHeight={40}
@@ -47,9 +47,9 @@ function Carousel() {
         visibleSlides={value}
         infinite={true}
         isIntrinsicHeight={false}
-        style={{ margin: '3rem 0 0 0' }}
+        className={style.main}
       >
-        <Slider style={{ minHeight: '300px' }}>
+        <Slider style={{ minHeight: '300px', padding: '0 2rem' }}>
           {softSkills.map((skill, i) => (
             <Slide index={i} key={i}>
               <div className={style.circle}>

@@ -39,7 +39,7 @@ function Carousel() {
 
   return (
     <div style={{ borderTop: '1px solid gainsboro' }}>
-      <h2 style={{ padding: '2rem' }}>I bring to the table...</h2>
+      <h2 style={{ padding: '1rem 0 0 2rem' }}>I bring to the table...</h2>
       <CarouselProvider
         naturalSlideWidth={80}
         naturalSlideHeight={40}

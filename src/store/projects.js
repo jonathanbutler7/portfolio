@@ -5,7 +5,7 @@ import {
   quizCode,
   spaceXApp,
   spaceXCode,
-} from '../store/links';
+} from '../store/links/index';
 import { GoPencil } from 'react-icons/go';
 import { GrNotes } from 'react-icons/gr';
 import { FaSpaceShuttle } from 'react-icons/fa';

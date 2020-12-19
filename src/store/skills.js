@@ -1,52 +1,55 @@
+import {
+  problemSolving,
+  collaboration,
+  motivation,
+  leadership,
+  knowledge,
+  music,
+  ear,
+} from './links/index';
+
 const softSkills = [
   {
     title: 'problem solving',
     detail:
-      'i thrive when i am confronted with a problem larger than my current skillset.',
-    icon:
-      'https://storage.googleapis.com/portfolio-website-content/problem-solving-icon.svg',
+      'I thrive when I am confronted with a problem larger than my current skillset.',
+    icon: problemSolving,
   },
   {
-    title: 'collaboration',
+    title: 'Collaboration',
     detail:
-      'as a musician, my entire career was dependent on my ability to work well with others.',
-    icon:
-      'https://storage.googleapis.com/portfolio-website-content/collaboration-icon.svg',
+      'As a chamber musician, my entire career was dependent on my ability to work well with others.',
+    icon: collaboration,
   },
   {
-    title: 'motivation',
+    title: 'Motivation',
     detail:
-      'when i finished my dissertation remotely, i stayed disciplined and motivated to tackle a large goal.',
-    icon:
-      'https://storage.googleapis.com/portfolio-website-content/movitation-icon.svg',
+      'When I finished my dissertation remotely, I stayed disciplined and motivated to tackle a large goal.',
+    icon: motivation,
   },
   {
-    title: 'leadership',
+    title: 'Leadership',
     detail:
-      "leaders lay down their goals, and i gladly lay down my own ideas to serve the client's needs.",
-    icon:
-      'https://storage.googleapis.com/portfolio-website-content/leadership-icon.svg',
+      "Leaders lay down their goals, and i gladly lay down my own ideas to serve the client's needs.",
+    icon: leadership,
   },
   {
-    title: 'collaboration',
+    title: 'Knowledge sharing',
     detail:
-      'as a musician, my entire career was dependent on my ability to work well with others.',
-    icon:
-      'https://storage.googleapis.com/portfolio-website-content/collaboration-icon.svg',
+      "It's important to be able to explain what I know so I can share the knowledge.",
+    icon: knowledge,
   },
   {
-    title: 'motivation',
+    title: 'Detail oriented',
     detail:
-      'when i finished my dissertation remotely, i stayed disciplined and motivated to tackle a large goal.',
-    icon:
-      'https://storage.googleapis.com/portfolio-website-content/movitation-icon.svg',
+      'As a classical musician, I prioritize making sure every detail is in order.',
+    icon: music,
   },
   {
-    title: 'leadership',
+    title: 'Empathetic listener',
     detail:
-      "leaders lay down their goals, and i gladly lay down my own ideas to serve the client's needs.",
-    icon:
-      'https://storage.googleapis.com/portfolio-website-content/leadership-icon.svg',
+      'I take pride in my ability to listen to others and empathize with their concerns.',
+    icon: ear,
   },
 ];
 

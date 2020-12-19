@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Footer.module.scss';
 import { GrLinkedin, GrGithub } from 'react-icons/gr';
 import { VscMail } from 'react-icons/vsc';
-import { linkedIn, github, email } from '../store/links';
+import { linkedIn, github, email } from '../store/links/index';
 import { usePort } from '../store/context';
 
 function Footer() {

@@ -11,7 +11,7 @@
     background: black;
     position: absolute;
     width: 45px;
-    left: 0px;
+    left: 10px;
     bottom: 150px;
     display: flex;
     align-items: center;
@@ -20,6 +20,7 @@
     width: 4rem;
     border-radius: 100%;
     color: white;
+    margin-left: 0;
 }
 
 .buttonRight {
@@ -27,7 +28,7 @@
     background: black;
     position: absolute;
     width: 45px;
-    right: 0px;
+    right: 10px;
     bottom: 150px;
     display: flex;
     align-items: center;
@@ -36,4 +37,5 @@
     width: 4rem;
     border-radius: 100%;
     color: white;
+    margin-right: 0;
 }

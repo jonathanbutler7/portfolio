@@ -30,6 +30,7 @@
     "react-scroll-effects": "^1.0.13",
     "react-slick": "^0.27.13",
     "react-spring": "^8.0.27",
+    "react-window-size": "^1.2.2",
     "tailwindcss": "^2.0.1",
     "web-vitals": "^0.2.4"
   },

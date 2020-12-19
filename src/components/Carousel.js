@@ -5,8 +5,10 @@ import CarouselButtons from './CarouselButtons';
 import style from './Carousel.module.scss';
 import { softSkills } from '../store/skills';
 import Skill1 from './Skill1';
+import { usePort } from '../store/context';
 
 function Carousel() {
+  const { isDarkMode } = usePort();
   const [value, setValue] = useState(3);
   const [windowDimensions, setWindowDimensions] = useState(
     getWindowDimensions()
@@ -38,8 +40,8 @@ function Carousel() {
   }, [windowDimensions.width]);
 
   return (
-    <div style={{ borderTop: '1px solid gainsboro' }}>
-      <h2 style={{ padding: '1rem 0 0 2rem' }}>I bring to the table...</h2>
+    <div className={isDarkMode ? style.carouselDark : style.carousel}>
+      <h2>I bring to the table...</h2>
       <CarouselProvider
         naturalSlideWidth={80}
         naturalSlideHeight={40}

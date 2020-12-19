@@ -1,7 +1,9 @@
-.main, .darkMain {
-    
+.main,
+.darkMain {
+
     color: white;
     position: relative;
+
     svg {
         height: 5rem;
         width: 5rem;
@@ -13,7 +15,7 @@
 }
 
 .darkMain {
-    background: var(--dark-gray)
+    background: var(--dark-background);
 }
 
 .iconContainer {
@@ -28,4 +30,4 @@
         height: 2rem;
         width: 2rem;
     }
-  }
+}

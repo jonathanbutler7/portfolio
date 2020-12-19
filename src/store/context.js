@@ -6,7 +6,7 @@ export function usePort() {
 }
 
 export function PortProvider({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const value = {
     isDarkMode,

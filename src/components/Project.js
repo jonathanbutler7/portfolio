@@ -3,7 +3,7 @@ import style from './Project.module.scss';
 import ProjectButtons from './ProjectButtons';
 import { projects } from '../store/projects';
 
-export default function Projects1() {
+export default function Projects() {
   return (
     <div id='projects'>
       {projects.map((project, i) => (

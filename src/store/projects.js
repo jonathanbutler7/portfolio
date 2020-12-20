@@ -5,11 +5,11 @@ import {
   quizCode,
   spaceXApp,
   spaceXCode,
-} from '../store/links/index';
+  macbook,
+} from './links/index';
 import { GoPencil } from 'react-icons/go';
 import { GrNotes } from 'react-icons/gr';
 import { FaSpaceShuttle } from 'react-icons/fa';
-import { macbook } from './links/index';
 
 const projects = [
   {
@@ -19,8 +19,7 @@ const projects = [
     icon: <GrNotes />,
     technologies: 'uses PERN stack',
     macbook: macbook,
-    description:
-      "This full stack app supports CRUD requests for /folders and /notes and supports sign up and sign in for /login, storing the user's encrypted passwords in the database.",
+    description: `This full stack app supports CRUD requests for /folders and /notes and supports sign up and sign in for /login, storing the user's encrypted passwords in the database.`,
   },
   {
     title: 'Space X',

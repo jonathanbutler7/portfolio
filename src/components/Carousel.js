@@ -40,7 +40,7 @@ function Carousel() {
         isIntrinsicHeight={false}
         className={style.main}
       >
-        <Slider style={{ minHeight: '300px', padding: '0 2rem' }}>
+        <Slider className={style.slider}>
           {softSkills.map((skill, i) => (
             <Slide index={i} key={i}>
               <div className={style.circle}>

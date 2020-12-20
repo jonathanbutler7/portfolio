@@ -3,10 +3,12 @@ import { ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import style from './CarouselButtons.module.scss';
+import { usePort } from '../store/context';
 
 export default function CarouselButtons() {
+  const { isDarkMode } = usePort();
   return (
-    <div className={style.main}>
+    <div className={isDarkMode ? style.darkMain : style.main}>
       <ButtonBack className={style.buttonLeft}>
         <AiOutlineArrowLeft style={{ height: '2rem', width: '2rem' }} />
       </ButtonBack>

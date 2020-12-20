@@ -31,12 +31,13 @@
 }
 
 .navBarDark {
-    background: var(--dark-gray);
+    background: var(--dark-secondary);
     color: var(--dark-accent);
     transition: var(--transition);
+    border-bottom: 1px solid var(--dark-headline);
 
     button {
-        background: var(--dark-purple);
+        background: var(--dark-tertiary);
         color: white;
     }
 }

@@ -4,42 +4,33 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import CarouselButtons from './CarouselButtons';
 import style from './Carousel.module.scss';
 import { softSkills } from '../store/skills';
-import Skill1 from './Skill1';
+import Skill1 from './Skill';
+import { getDimensions } from '../helpers/helpers';
+import { usePort } from '../store/context';
 
 function Carousel() {
+  const { isDarkMode } = usePort();
   const [value, setValue] = useState(3);
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
+  const [windowDimensions, setWindowDimensions] = useState(getDimensions());
+  const { width } = windowDimensions;
 
-  function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height,
-    };
-  }
   useEffect(() => {
     function handleResize() {
-      setWindowDimensions(getWindowDimensions());
+      setWindowDimensions(getDimensions());
     }
-
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
   useEffect(() => {
-    setValue(
-      windowDimensions.width > 1300
-        ? 3
-        : windowDimensions.width > 800 && windowDimensions.width < 1299
-        ? 2
-        : 1
-    );
-  }, [windowDimensions.width]);
+    const visibleSlides =
+      width > 1300 ? 3 : width > 800 && width < 1299 ? 2 : 1;
+    setValue(visibleSlides);
+  }, [width]);
 
   return (
-    <div style={{ borderTop: '1px solid gainsboro' }}>
-      <h2 style={{ padding: '1rem 0 0 2rem' }}>I bring to the table...</h2>
+    <div className={isDarkMode ? style.carouselDark : style.carousel}>
+      <h2>I bring to the table...</h2>
       <CarouselProvider
         naturalSlideWidth={80}
         naturalSlideHeight={40}
@@ -49,7 +40,7 @@ function Carousel() {
         isIntrinsicHeight={false}
         className={style.main}
       >
-        <Slider style={{ minHeight: '300px', padding: '0 2rem' }}>
+        <Slider className={style.slider}>
           {softSkills.map((skill, i) => (
             <Slide index={i} key={i}>
               <div className={style.circle}>

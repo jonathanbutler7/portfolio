@@ -1,8 +1,6 @@
-![alt text](https://storage.googleapis.com/portfolio-website-content/portfolio-mobile.png)
+# What is this?
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my portfolio website. It serves as a one stop shop for info about me, projects I've built, my resume, and some of my design/UX skills. The code is written in a clean way and uses best practices.
 
 ## What is this?
 

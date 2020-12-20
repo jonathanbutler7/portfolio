@@ -1,4 +1,5 @@
-.main {
+.main,
+.darkMain {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -6,48 +7,62 @@
     position: relative;
 }
 
+.main {
+    .buttonLeft,
+    .buttonRight {
+        border: none;
+        background: var(--light-tertiary);
+        position: absolute;
+        width: 45px;
+        bottom: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 100%;
+        color: white;
+        margin-left: 0;
+    }
+}
+.darkMain {
+    .buttonLeft,
+    .buttonRight {
+        border: none;
+        background: var(--dark-tertiary);
+        position: absolute;
+        width: 45px;
+        bottom: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 100%;
+        color: white;
+        margin-left: 0;
+    }
+}
+
 .buttonLeft {
-    border: none;
-    background: var(--color-darkblue);
-    position: absolute;
-    width: 45px;
     left: 10px;
-    bottom: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 100%;
-    color: white;
-    margin-left: 0;
 }
 
 .buttonRight {
-    border: none;
-    background: var(--color-darkblue);
-    position: absolute;
-    width: 45px;
     right: 10px;
-    bottom: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 100%;
-    color: white;
-    margin-right: 0;
 }
 
 @media only screen and (max-width: 376px) {
 
-    .buttonRight, .buttonLeft {
+    .buttonRight,
+    .buttonLeft {
         bottom: 30px;
     }
+
     .buttonRight {
         right: 75px;
     }
+
     .buttonLeft {
         left: 75px;
     }

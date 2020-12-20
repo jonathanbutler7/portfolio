@@ -1,16 +1,12 @@
-const problemSolving =
-  'https://storage.googleapis.com/portfolio-website-content/problem-solving-icon.svg';
-const collaboration =
-  'https://storage.googleapis.com/portfolio-website-content/collaboration-icon.svg';
-const motivation =
-  'https://storage.googleapis.com/portfolio-website-content/movitation-icon.svg';
-const leadership =
-  'https://storage.googleapis.com/portfolio-website-content/leadership-icon.svg';
-const knowledge =
-  'https://storage.googleapis.com/portfolio-website-content/knowledge.svg';
-const music =
-  'https://storage.googleapis.com/portfolio-website-content/music.svg';
-const ear = 'https://storage.googleapis.com/portfolio-website-content/ear.svg';
+const googleUrl = process.env.REACT_APP_GOOGLE_URL;
+const problemSolving = `${googleUrl}=1EEAqAqMR_54KBE7kgn19OlSMFXgr1qcy`;
+const collaboration = `${googleUrl}=1uXSQw5A_hfVknRp3-wxLJpaO31Qx9DZU`;
+const motivation = `${googleUrl}=1AZagadzEc3jOOwjiJLdhfu9q9rLqqSLw`;
+const leadership = `${googleUrl}=1E1jbroe-2hgBTKJj73d1vp3EAtpQx1-7`;
+const knowledge = `${googleUrl}=1fN0gm8DR7wYYEAjeN9Jrxh9BFFnGYPTz`;
+const music = `${googleUrl}=1K9czw_3EktTOXNP-2ZwWiSLF5z2PHxaU`;
+const ear = `${googleUrl}=1WoC-k_d9cGvn2TlCZKEpBFyKgVj1QX1p`;
+const macbook = `${googleUrl}=1u8GrE8Jy4TAPPf7TUfsypVwDrY5wmXp6`;
 
 export {
   problemSolving,
@@ -20,4 +16,5 @@ export {
   knowledge,
   music,
   ear,
+  macbook,
 };

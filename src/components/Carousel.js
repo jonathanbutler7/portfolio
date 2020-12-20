@@ -4,7 +4,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import CarouselButtons from './CarouselButtons';
 import style from './Carousel.module.scss';
 import { softSkills } from '../store/skills';
-import Skill1 from './Skill1';
+import Skill1 from './Skill';
 import { getDimensions } from '../helpers/helpers';
 import { usePort } from '../store/context';
 
@@ -18,7 +18,6 @@ function Carousel() {
     function handleResize() {
       setWindowDimensions(getDimensions());
     }
-
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);

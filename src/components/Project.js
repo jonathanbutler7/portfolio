@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Project1.module.scss';
+import style from './Project.module.scss';
 import ProjectButtons from './ProjectButtons';
 import { projects } from '../store/projects';
 

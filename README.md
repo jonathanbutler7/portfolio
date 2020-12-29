@@ -2,6 +2,17 @@
 
 This is my portfolio website. It serves as a one stop shop for info about me, projects I've built, my resume, and some of my design/UX skills. The code is written in a clean way and uses best practices.
 
+## What is this?
+
+This is my portfolio project in which houses my most recent work as a developer.\
+It makes use of flexbox and I incorporated dark mode with useContext.\
+I also used it as an opportunity to try to create several different design themes.\
+I will be updating the design over time.
+
+It may be viewed live by clicking [here](https://jonathan-butler.herokuapp.com/).
+
+It's fully responsive, so go ahead, try it in mobile, too!
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -13,4 +24,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-

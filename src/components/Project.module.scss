@@ -1,14 +1,33 @@
-.project {
-    border-top: 1px solid gainsboro;
+.project, .projectDark {
+    
     display: flex;
     align-items: center;
     flex-direction: column;
     h1 {
-        color: var(--color-gray);
         margin: 1rem;
     }
     img {
         width: 25rem;
+    }
+}
+
+.project {
+    border-top: 1px solid gainsboro;
+    h1 {
+        color: var(--color-gray);
+        transition: var(--transition);
+    }
+}
+
+.projectDark {
+    background: var(--dark-background-secondary);
+    transition: var(--transition);
+    h1 {
+        color: var(--dark-headline);
+        transition: var(--transition);
+    }   
+    p, h5 {
+        color: var(--dark-paragraph);
     }
 }
 

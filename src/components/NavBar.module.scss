@@ -23,7 +23,8 @@
 .navBar {
     background: var(--light-background);
     transition: var(--transition);
-    border-bottom: 1px solid var(--light-headline);
+    border-bottom: 1px solid gainsboro;
+
     button {
         background: var(--light-tertiary);
         color: var(--light-button-text);
@@ -31,14 +32,14 @@
 }
 
 .navBarDark {
-    background: var(--dark-secondary);
+    background: var(--dark-background);
     color: var(--dark-accent);
     transition: var(--transition);
-    border-bottom: 1px solid var(--dark-headline);
+    
 
     button {
-        background: var(--dark-tertiary);
-        color: white;
+        background: var(--dark-button);
+        color: var(--dark-button-text);
     }
 }
 

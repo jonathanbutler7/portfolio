@@ -1,6 +1,37 @@
-.buttonContainer {
+.buttonContainer,
+.darkButtonContainer {
     display: flex;
 
+}
+
+.buttonContainer {
+    .code {
+
+        background: var(--color-green);
+        color: white;
+    }
+
+    .live {
+        color: var(--color-green);
+        border: 1px solid var(--color-green);
+        background-color: white;
+
+    }
+}
+
+.darkButtonContainer {
+    .live {
+
+        background: var(--dark-button);
+        color: white;
+    }
+
+    .code {
+        color: var(--dark-headline);
+        border: 1px solid var(--dark-paragraph);
+        background-color: var(--dark-paragraph);
+
+    }
 }
 
 a {
@@ -10,17 +41,4 @@ a {
     width: 8rem;
     height: 3rem;
     margin: 2rem;
-}
-
-.code {
-
-    background: var(--color-green);
-    color: white;
-}
-
-.live {
-    color: var(--color-green);
-    border: 1px solid var(--color-green);
-    background-color: white;
-
 }

@@ -3,6 +3,7 @@ import style from './Project.module.scss';
 import ProjectButtons from './ProjectButtons';
 import { projects } from '../store/projects';
 import { usePort } from '../store/context';
+
 export default function Projects() {
   const { isDarkMode } = usePort();
   return (

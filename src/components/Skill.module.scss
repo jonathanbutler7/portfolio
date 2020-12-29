@@ -15,8 +15,11 @@
 
 .darkMain {
 
-    h4,
-    p {
+    h4 {
         color: var(--dark-headline)
+    }
+
+    p {
+        color: var(--dark-paragraph);
     }
 }

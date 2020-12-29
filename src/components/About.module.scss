@@ -13,14 +13,14 @@
 .main {
     background: var(--color-white);
     transition: var(--transition);
-    border-bottom: 1px solid var(--light-headline);
+    border-bottom: 1px solid gainsboro;
 }
 
 .mainDark {
-    background: var(--dark-lightgray);
+    background: var(--dark-background-secondary);
     transition: var(--transition);
     color: var(--dark-accent);
-    border-bottom: 1px solid var(--dark-headline);
+    // border-bottom: 1px solid var(--dark-headline);
 }
 
 .text {

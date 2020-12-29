@@ -1,5 +1,5 @@
 .project, .projectDark {
-    border-top: 1px solid gainsboro;
+    
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -12,6 +12,7 @@
 }
 
 .project {
+    border-top: 1px solid gainsboro;
     h1 {
         color: var(--color-gray);
         transition: var(--transition);
@@ -19,12 +20,15 @@
 }
 
 .projectDark {
-    background: var(--dark-background);
+    background: var(--dark-background-secondary);
     transition: var(--transition);
-    h1, p, h5 {
+    h1 {
         color: var(--dark-headline);
         transition: var(--transition);
     }   
+    p, h5 {
+        color: var(--dark-paragraph);
+    }
 }
 
 .container {

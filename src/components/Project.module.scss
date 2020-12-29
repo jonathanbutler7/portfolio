@@ -1,15 +1,30 @@
-.project {
+.project, .projectDark {
     border-top: 1px solid gainsboro;
     display: flex;
     align-items: center;
     flex-direction: column;
     h1 {
-        color: var(--color-gray);
         margin: 1rem;
     }
     img {
         width: 25rem;
     }
+}
+
+.project {
+    h1 {
+        color: var(--color-gray);
+        transition: var(--transition);
+    }
+}
+
+.projectDark {
+    background: var(--dark-background);
+    transition: var(--transition);
+    h1, p, h5 {
+        color: var(--dark-headline);
+        transition: var(--transition);
+    }   
 }
 
 .container {

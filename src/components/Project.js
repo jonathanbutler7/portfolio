@@ -2,12 +2,13 @@ import React from 'react';
 import style from './Project.module.scss';
 import ProjectButtons from './ProjectButtons';
 import { projects } from '../store/projects';
-
+import { usePort } from '../store/context';
 export default function Projects() {
+  const { isDarkMode } = usePort();
   return (
     <div id='projects'>
       {projects.map((project, i) => (
-        <div className={style.project} key={i}>
+        <div className={isDarkMode ? style.projectDark : style.project} key={i}>
           <div className={style.container}>
             <div className={style.img}>
               <img src={project.macbook} alt='macbook' />

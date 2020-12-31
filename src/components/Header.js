@@ -3,7 +3,7 @@ import styles from './Header.module.scss';
 import Switch from './Switch';
 import { useDarkMode } from '../helpers/context';
 import Hamburger from './Hamburger';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { GiHamburgerMenu as HamburgerIcon } from 'react-icons/gi';
 import { emojisplosion } from 'emojisplosion';
 
 function Header() {
@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className={isDarkMode ? styles.navDark : styles.nav}>
       <div className={styles.hamburger}>
-        <GiHamburgerMenu onClick={() => showMenu(!menu)} />
+        <HamburgerIcon onClick={() => showMenu(!menu)} />
       </div>
       {menu && <Hamburger showMenu={showMenu} menu={menu} />}
       <div className={styles.left}>

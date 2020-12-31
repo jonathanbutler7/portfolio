@@ -21,7 +21,7 @@ const projects = [
     icon: <GoPencil />,
     technologies:
       'leverages useContext, useReducer, and custom hooks to handle state updates every 2 seconds',
-    macbook: dashboard,
+    image: dashboard,
     description:
       'Mobile responsive, allows user to delete, edit, and filter messages',
   },
@@ -31,7 +31,7 @@ const projects = [
     live: notefulApp,
     icon: <GrNotes />,
     technologies: 'uses PERN stack',
-    macbook: noteful,
+    image: noteful,
     description: `Full stack notes application prototype, features encrypted login, authentication with JWT, toast component to inform user of state updates, and custom useInterval hook.`,
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     live: spaceXApp,
     icon: <FaSpaceShuttle />,
     technologies: 'uses jQuery, NASA, and Space-X APIs',
-    macbook: space_x,
+    image: space_x,
     description:
       'This mobile response app uses jQuery to consume the Space X and NASA APIs.',
   },

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { CarouselProvider, Slide, Slider } from 'pure-react-carousel';
+import { softSkills } from '../store/softSkills';
+import { getDimensions } from '../helpers/helpers';
+import { useDarkMode } from '../helpers/context';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import CarouselButtons from './CarouselButtons';
 import style from './Carousel.module.scss';
-import { softSkills } from '../store/softSkills';
 import Skill1 from './Skill';
-import { getDimensions } from '../helpers/helpers';
-import { useDarkMode } from '../helpers/context';
 
 function Carousel() {
   const { isDarkMode } = useDarkMode();
@@ -23,6 +23,7 @@ function Carousel() {
   }, []);
 
   useEffect(() => {
+    // visibleSlides determines how many slides are shown based on screen width
     const visibleSlides =
       width > 1300 ? 3 : width > 800 && width < 1299 ? 2 : 1;
     setValue(visibleSlides);

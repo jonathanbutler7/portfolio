@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 function getDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -6,4 +8,23 @@ function getDimensions() {
   };
 }
 
-export { getDimensions };
+function useOutsideAlerter(ref, showMenu) {
+  useEffect(() => {
+    /**
+     * Alert if clicked on outside of element
+     */
+    function handleClickOutside(event) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        showMenu(false);
+      }
+    }
+    // Bind the event listener
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [ref]);
+}
+
+export { getDimensions, useOutsideAlerter };

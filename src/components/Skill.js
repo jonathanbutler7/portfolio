@@ -5,7 +5,7 @@ import { useDarkMode } from '../helpers/context';
 export default function Skill1({ skill }) {
   const { isDarkMode } = useDarkMode();
   const { title, detail, icon } = skill;
-  
+
   return (
     <div className={isDarkMode ? style.darkMain : style.main}>
       {icon}

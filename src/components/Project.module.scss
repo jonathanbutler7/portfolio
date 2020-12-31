@@ -14,8 +14,11 @@
 .project {
     border-top: 1px solid gainsboro;
     h1 {
-        color: var(--color-gray);
+        color: var(--light-headline);
         transition: var(--transition);
+    }
+    p, h5 {
+        color: var(--light-paragraph);
     }
 }
 

@@ -1,8 +1,8 @@
 import { GrLinkedin, GrGithub } from 'react-icons/gr';
 import { VscMail } from 'react-icons/vsc';
-import { linkedIn, github, email } from '../store/links/index';
+import { linkedIn, github, email } from '../links/index';
 
-const contactArr = [
+const contact = [
   {
     link: linkedIn,
     icon: <GrLinkedin />,
@@ -17,4 +17,4 @@ const contactArr = [
   },
 ];
 
-export { contactArr };
+export { contact };

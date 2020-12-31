@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CarouselProvider, Slide, Slider } from 'pure-react-carousel';
-import { softSkills } from '../store/softSkills';
+import { softSkills } from '../store/content/index';
 import { getDimensions } from '../helpers/helpers';
 import { useDarkMode } from '../helpers/context';
 import 'pure-react-carousel/dist/react-carousel.es.css';

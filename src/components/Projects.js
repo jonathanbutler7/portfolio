@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from './Project';
-import { projects } from '../store/projects';
+import { projects } from '../store/content/index';
 
 export default function Projects() {
   return (

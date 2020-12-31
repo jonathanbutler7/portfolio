@@ -1,6 +1,6 @@
 import './styles/main.css';
-import NavBar from './components/Header';
-import SelectBar from './components/NavBar';
+import Header from './components/Header';
+import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -10,8 +10,8 @@ import { DarkModeProvider } from './helpers/context';
 function App() {
   return (
     <DarkModeProvider>
+      <Header />
       <NavBar />
-      <SelectBar />
       <About />
       <Carousel />
       <Projects />

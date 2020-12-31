@@ -1,14 +1,21 @@
+.project,
+.projectDark {
 
-
-.project, .projectDark {
-    
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 2rem 0;
+
     h1 {
         margin: 1rem;
     }
+
+    h5 {
+        text-decoration: underline;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
     img {
         max-width: 100%;
         padding: 2rem;
@@ -25,11 +32,14 @@
 
 .project {
     border-top: 1px solid gainsboro;
+
     h1 {
         color: var(--light-headline);
         transition: var(--transition);
     }
-    p, h5 {
+
+    p,
+    h5 {
         color: var(--light-paragraph);
     }
 }
@@ -37,11 +47,14 @@
 .projectDark {
     background: var(--dark-background-secondary);
     transition: var(--transition);
-    h1 {
+
+    h1,
+    h5 {
         color: var(--dark-headline);
         transition: var(--transition);
-    }   
-    p, h5 {
+    }
+
+    p {
         color: var(--dark-paragraph);
     }
 }
@@ -53,7 +66,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    
+
 }
 
 .text {
@@ -65,14 +78,18 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .container, .darkContainer {
+
+    .container,
+    .darkContainer {
         flex-direction: column;
         margin: 0 auto;
         justify-content: flex-end;
+
         h1 {
             margin: 1rem 0 0 0;
         }
     }
+
     .text {
         padding: 2rem;
     }

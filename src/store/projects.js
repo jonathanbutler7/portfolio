@@ -20,19 +20,19 @@ const projects = [
     live: dashboardApp,
     icon: <GoPencil />,
     technologies:
-      'leverages useContext, useReducer, and custom hooks to handle state updates every 2 seconds',
+      'uses React',
     image: dashboard,
     description:
-      'Mobile responsive, allows user to delete, edit, and filter messages',
+      'Leverages useReducer, useContext, and custom hooks to allows user to delete, edit, and filter messages that pop up every two seconds.',
   },
   {
     title: 'Noteful 📝',
     code: notefulCode,
     live: notefulApp,
     icon: <GrNotes />,
-    technologies: 'uses PERN stack',
+    technologies: 'uses PostgreSQL, Express, React, Node',
     image: noteful,
-    description: `Full stack notes application prototype, features encrypted login, authentication with JWT, toast component to inform user of state updates, and custom useInterval hook.`,
+    description: 'Full stack notes application prototype, features encrypted login, session authentication with JWT, toast component to inform user of state updates, and custom useInterval hook.',
   },
   {
     title: 'Space X 🚀',
@@ -42,7 +42,7 @@ const projects = [
     technologies: 'uses jQuery, NASA, and Space-X APIs',
     image: space_x,
     description:
-      'This mobile response app uses jQuery to consume the Space X and NASA APIs.',
+      'This mobile responsive app uses jQuery to consume the Space X and NASA APIs.',
   },
 ];
 

@@ -1,14 +1,13 @@
 import {
   notefulApp,
   notefulCode,
-  quizApp,
-  quizCode,
+  dashboardApp,
+  dashboardCode,
   spaceXApp,
   spaceXCode,
-  macbook,
   space_x,
   noteful,
-  dashboard
+  dashboard,
 } from './links/index';
 import { GoPencil } from 'react-icons/go';
 import { GrNotes } from 'react-icons/gr';
@@ -16,7 +15,7 @@ import { FaSpaceShuttle } from 'react-icons/fa';
 
 const projects = [
   {
-    title: 'Noteful',
+    title: 'Noteful 📝',
     code: notefulCode,
     live: notefulApp,
     icon: <GrNotes />,
@@ -25,7 +24,7 @@ const projects = [
     description: `This full stack app supports CRUD requests for /folders and /notes and supports sign up and sign in for /login, storing the user's encrypted passwords in the database.`,
   },
   {
-    title: 'Space X',
+    title: 'Space X 🚀',
     code: spaceXCode,
     live: spaceXApp,
     icon: <FaSpaceShuttle />,
@@ -35,14 +34,15 @@ const projects = [
       'This mobile response app uses jQuery to consume the Space X and NASA APIs.',
   },
   {
-    title: 'Quiz App',
-    code: quizCode,
-    live: quizApp,
+    title: 'Dashboard 💬',
+    code: dashboardCode,
+    live: dashboardApp,
     icon: <GoPencil />,
-    technologies: 'uses jQuery, knowledge of The Office',
+    technologies:
+      'leverages useContext, useReducer, and custom hooks to handle state updates every 2 seconds',
     macbook: dashboard,
     description:
-      'This mobile responsive app is based on my favorite TV show, The Office.',
+      'Mobile responsive, allows user to delete, edit, and filter messages',
   },
 ];
 

@@ -48,7 +48,7 @@ const softSkills = [
   {
     title: 'Empathetic listener',
     detail:
-      'I take pride in my ability to listen to others and empathize with their concerns.',
+      'I take pride in my ability to listen to others, empathize with their concerns, and learn from their perspectives.',
     icon: <FaAssistiveListeningSystems />,
   },
 ];

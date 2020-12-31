@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './NavBar.module.scss';
 import { emojisplosion } from 'emojisplosion';
 import { useDarkMode } from '../helpers/context';
-import ProjectsContactResume from './ProjectsContactResume';
+import ProjectsContactResume from './NavLinks';
 
 function NavBar() {
   const { isDarkMode } = useDarkMode();

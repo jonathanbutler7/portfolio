@@ -1,15 +1,24 @@
+
+
 .project, .projectDark {
     
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 2rem 0;
     h1 {
         margin: 1rem;
     }
     img {
-        height: 20rem;
+        max-width: 100%;
         padding: 2rem;
     }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .project {
@@ -33,18 +42,6 @@
     p, h5 {
         color: var(--dark-paragraph);
     }
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.img {
-    display: flex;
-    flex: 1;
-    justify-content: center;
 }
 
 .textContainer {

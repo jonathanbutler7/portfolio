@@ -1,10 +1,10 @@
 import React from 'react';
 import ProjectButtons from './ProjectButtons';
 import style from './Project.module.scss';
-import { usePort } from '../store/context';
+import { useDarkMode } from '../helpers/context';
 
 export default function Project({ project }) {
-  const { isDarkMode } = usePort();
+  const { isDarkMode } = useDarkMode();
   return (
     <div>
       <div className={isDarkMode ? style.projectDark : style.project}>

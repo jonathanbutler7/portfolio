@@ -5,18 +5,18 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Projects from './components/Projects';
 import Carousel from './components/Carousel';
-import { PortProvider } from './store/context';
+import { DarkModeProvider } from './helpers/context';
 
 function App() {
   return (
-    <PortProvider>
+    <DarkModeProvider>
       <NavBar />
       <SelectBar />
       <About />
       <Carousel />
       <Projects />
       <Footer />
-    </PortProvider>
+    </DarkModeProvider>
   );
 }
 

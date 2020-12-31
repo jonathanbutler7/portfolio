@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './Skill.module.scss';
-import { usePort } from '../store/context';
+import { useDarkMode } from '../helpers/context';
 
 export default function Skill1({ skill }) {
-  const { isDarkMode } = usePort();
+  const { isDarkMode } = useDarkMode();
   const { title, detail, icon } = skill;
   
   return (

@@ -1,12 +1,12 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Mode, useLightSwitch } from 'use-light-switch';
-const PortfolioContext = React.createContext();
+const DarkModeContext = React.createContext();
 
-export function usePort() {
-  return useContext(PortfolioContext);
+export function useDarkMode() {
+  return useContext(DarkModeContext);
 }
 
-export function PortProvider({ children }) {
+export function DarkModeProvider({ children }) {
   const mode = useLightSwitch();
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -14,7 +14,7 @@ export function PortProvider({ children }) {
     if (mode === Mode.Dark) {
       setIsDarkMode(true);
     }
-  }, []);
+  }, [mode]);
   
   const value = {
     isDarkMode,
@@ -22,8 +22,8 @@ export function PortProvider({ children }) {
   };
 
   return (
-    <PortfolioContext.Provider value={value}>
+    <DarkModeContext.Provider value={value}>
       {children}
-    </PortfolioContext.Provider>
+    </DarkModeContext.Provider>
   );
 }

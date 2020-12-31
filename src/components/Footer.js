@@ -3,10 +3,10 @@ import styles from './Footer.module.scss';
 import { GrLinkedin, GrGithub } from 'react-icons/gr';
 import { VscMail } from 'react-icons/vsc';
 import { linkedIn, github, email } from '../store/links/index';
-import { usePort } from '../store/context';
+import { useDarkMode } from '../helpers/context';
 
 function Footer() {
-  const { isDarkMode } = usePort();
+  const { isDarkMode } = useDarkMode();
 
   return (
     <footer className={isDarkMode ? styles.darkMain : styles.main} id='contact'>

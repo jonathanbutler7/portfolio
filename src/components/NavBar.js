@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './NavBar.module.scss';
 import { emojisplosion } from 'emojisplosion';
-import { usePort } from '../store/context';
+import { useDarkMode } from '../helpers/context';
 import ProjectsContactResume from './ProjectsContactResume';
 
 function NavBar() {
-  const { isDarkMode } = usePort();
+  const { isDarkMode } = useDarkMode();
 
   return (
     <nav className={isDarkMode ? styles.navBarDark : styles.navBar}>

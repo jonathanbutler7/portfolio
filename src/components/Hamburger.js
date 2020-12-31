@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Hamburger.module.scss';
 import ProjectsContactResume from './ProjectsContactResume';
-import { usePort } from '../store/context';
+import { useDarkMode } from '../helpers/context';
 
 function Hamburger() {
-  const { isDarkMode } = usePort();
+  const { isDarkMode } = useDarkMode();
 
   return (
     <main className={isDarkMode ? styles.darkMain : styles.main}>

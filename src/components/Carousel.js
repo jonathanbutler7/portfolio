@@ -6,10 +6,10 @@ import style from './Carousel.module.scss';
 import { softSkills } from '../store/softSkills';
 import Skill1 from './Skill';
 import { getDimensions } from '../helpers/helpers';
-import { usePort } from '../store/context';
+import { useDarkMode } from '../helpers/context';
 
 function Carousel() {
-  const { isDarkMode } = usePort();
+  const { isDarkMode } = useDarkMode();
   const [value, setValue] = useState(3);
   const [windowDimensions, setWindowDimensions] = useState(getDimensions());
   const { width } = windowDimensions;

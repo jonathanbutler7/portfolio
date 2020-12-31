@@ -18,7 +18,7 @@ const projects = [
     technologies: 'uses React',
     image: dashboard,
     description:
-      'Leverages useReducer, useContext, and custom hooks to allows user to delete, edit, and filter messages that pop up every two seconds.',
+      'Leverages useReducer & useContext best practices as well as custom hooks to allow users to delete, edit, and filter messages that pop up every two seconds.',
   },
   {
     title: 'Noteful 📝',

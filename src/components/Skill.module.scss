@@ -7,19 +7,23 @@
     justify-content: center;
     align-items: center;
 
-    img {
+    svg {
         height: 4rem;
         width: 4rem;
+        margin-bottom: 1rem;
     }
 }
 
 .darkMain {
 
     h4 {
-        color: var(--dark-headline)
+        color: var(--dark-headline);
     }
 
     p {
+        color: var(--dark-paragraph);
+    }
+    svg {
         color: var(--dark-paragraph);
     }
 }

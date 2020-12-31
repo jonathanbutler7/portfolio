@@ -8,7 +8,7 @@ export default function Skill1({ skill }) {
   
   return (
     <div className={isDarkMode ? style.darkMain : style.main}>
-      <img src={icon} alt='' />
+      {icon}
       <h4>{title}</h4>
       <p>{detail}</p>
     </div>

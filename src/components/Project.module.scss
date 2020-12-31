@@ -7,7 +7,8 @@
         margin: 1rem;
     }
     img {
-        width: 25rem;
+        height: 20rem;
+        padding: 2rem;
     }
 }
 
@@ -44,8 +45,6 @@
     display: flex;
     flex: 1;
     justify-content: center;
-    border: 1px solid red;
-    height: 100%;
 }
 
 .textContainer {
@@ -66,7 +65,7 @@
     padding: 0 2rem;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 900px) {
     .container, .darkContainer {
         flex-direction: column;
         margin: 0 auto;

@@ -6,7 +6,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    h4 {
+        padding-bottom: 1rem;
+    }
+    p {
+        text-align: center;
+    }
     svg {
         height: 4rem;
         width: 4rem;

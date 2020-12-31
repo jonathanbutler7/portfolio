@@ -5,32 +5,33 @@
 }
 
 .buttonContainer {
-    .code {
-
-        background: var(--light-tertiary);
-        color: white;
-    }
-
     .live {
         color: var(--light-tertiary);
         border: 1px solid var(--light-tertiary);
         background-color: white;
 
     }
+
+    .code {
+
+        background: var(--light-tertiary);
+        color: white;
+    }
+
 }
 
 .darkButtonContainer {
     .live {
-
-        background: var(--dark-button);
-        color: white;
-    }
-
-    .code {
         color: var(--dark-headline);
         border: 1px solid var(--dark-paragraph);
         background-color: var(--dark-paragraph);
 
+
+    }
+
+    .code {
+        background: var(--dark-button);
+        color: white;
     }
 }
 

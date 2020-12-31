@@ -1,6 +1,7 @@
 const flickrUrl = 'https://live.staticflickr.com/65535';
-const dashboard = `${flickrUrl}/50781288956_abaf497248_b.jpg`;
-const space_x = `${flickrUrl}/50780524053_2828e70c21_b.jpg`;
-const noteful = `${flickrUrl}/50781958197_f5b1180dee_b.jpg`;
+
+const noteful = `${flickrUrl}/50783455823_a9a959a7c3_b.jpg`;
+const dashboard = `${flickrUrl}/50784319117_fe6b9330d5_b.jpg`;
+const space_x = `${flickrUrl}/50783455968_2f68fbf06e_b.jpg`;
 
 export { dashboard, noteful, space_x };

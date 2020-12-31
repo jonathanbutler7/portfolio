@@ -15,7 +15,7 @@ function Header() {
       <div className={styles.hamburger}>
         <GiHamburgerMenu onClick={() => showMenu(!menu)} />
       </div>
-      {menu && <Hamburger />}
+      {menu && <Hamburger showMenu={showMenu} menu={menu} />}
       <div className={styles.left}>
         <code>jonathan drinks</code>
         <h1 onClick={() => emojisplosion()}>☕</h1>

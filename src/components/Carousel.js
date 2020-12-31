@@ -30,7 +30,7 @@ function Carousel() {
 
   return (
     <div className={isDarkMode ? style.carouselDark : style.carousel}>
-      <h2>I bring to the table...</h2>
+      <h2>I am also a...</h2>
       <CarouselProvider
         naturalSlideWidth={80}
         naturalSlideHeight={40}

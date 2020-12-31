@@ -45,6 +45,7 @@
 }
 
 .projectDark {
+    border-top: 1px solid var(--dark-background);
     background: var(--dark-background-secondary);
     transition: var(--transition);
 

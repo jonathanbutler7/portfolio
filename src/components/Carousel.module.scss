@@ -9,7 +9,7 @@
 
 .carousel {
     background: white;
-
+    transition: var(--transition);
     h2 {
         padding: 1rem 0 0 2rem;
     }
@@ -17,7 +17,7 @@
 
 .carouselDark {
     background: var(--dark-background);
-
+    transition: var(--transition);
     h2 {
         padding: 1rem 0 0 2rem;
         color: var(--dark-headline)

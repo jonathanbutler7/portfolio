@@ -35,7 +35,7 @@
     background: var(--dark-background);
     color: var(--dark-headline);
     transition: var(--transition);
-    
+    border-bottom: 1px var(--dark-background);
 
     button {
         background: var(--dark-button);

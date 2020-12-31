@@ -12,6 +12,7 @@
     .buttonRight {
         border: none;
         background: var(--light-tertiary);
+        transition: var(--transition);
         position: absolute;
         width: 45px;
         bottom: 150px;
@@ -30,6 +31,7 @@
     .buttonRight {
         border: none;
         background: var(--dark-button);
+        transition: var(--transition);
         position: absolute;
         width: 45px;
         bottom: 150px;

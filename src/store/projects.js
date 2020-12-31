@@ -6,6 +6,9 @@ import {
   spaceXApp,
   spaceXCode,
   macbook,
+  space_x,
+  noteful,
+  dashboard
 } from './links/index';
 import { GoPencil } from 'react-icons/go';
 import { GrNotes } from 'react-icons/gr';
@@ -18,7 +21,7 @@ const projects = [
     live: notefulApp,
     icon: <GrNotes />,
     technologies: 'uses PERN stack',
-    macbook: macbook,
+    macbook: noteful,
     description: `This full stack app supports CRUD requests for /folders and /notes and supports sign up and sign in for /login, storing the user's encrypted passwords in the database.`,
   },
   {
@@ -27,7 +30,7 @@ const projects = [
     live: spaceXApp,
     icon: <FaSpaceShuttle />,
     technologies: 'uses jQuery, NASA, and Space-X APIs',
-    macbook: macbook,
+    macbook: space_x,
     description:
       'This mobile response app uses jQuery to consume the Space X and NASA APIs.',
   },
@@ -37,7 +40,7 @@ const projects = [
     live: quizApp,
     icon: <GoPencil />,
     technologies: 'uses jQuery, knowledge of The Office',
-    macbook: macbook,
+    macbook: dashboard,
     description:
       'This mobile responsive app is based on my favorite TV show, The Office.',
   },

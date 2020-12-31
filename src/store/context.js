@@ -1,4 +1,5 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+import { Mode, useLightSwitch } from 'use-light-switch';
 const PortfolioContext = React.createContext();
 
 export function usePort() {
@@ -6,8 +7,15 @@ export function usePort() {
 }
 
 export function PortProvider({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const mode = useLightSwitch();
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
+  useEffect(() => {
+    if (mode === Mode.Dark) {
+      setIsDarkMode(true);
+    }
+  }, []);
+  
   const value = {
     isDarkMode,
     setIsDarkMode,

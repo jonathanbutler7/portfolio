@@ -1,6 +1,6 @@
 import { GrLinkedin, GrGithub } from 'react-icons/gr';
 import { VscMail } from 'react-icons/vsc';
-import { linkedIn, github, email } from '../links/index';
+import { linkedIn, github, email } from '../assets/index';
 
 const contact = [
   {

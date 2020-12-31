@@ -8,7 +8,7 @@ import {
   space_x,
   noteful,
   dashboard,
-} from '../links/index';
+} from '../assets/index';
 
 const projects = [
   {

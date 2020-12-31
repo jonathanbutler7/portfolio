@@ -1,4 +1,4 @@
-import { resume } from '../links/index';
+import { resume } from '../assets/index';
 
 const navLinks = [
   {

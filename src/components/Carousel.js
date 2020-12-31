@@ -3,13 +3,13 @@ import { CarouselProvider, Slide, Slider } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import CarouselButtons from './CarouselButtons';
 import style from './Carousel.module.scss';
-import { softSkills } from '../store/skills';
+import { softSkills } from '../store/softSkills';
 import Skill1 from './Skill';
 import { getDimensions } from '../helpers/helpers';
-import { usePort } from '../store/context';
+import { useDarkMode } from '../helpers/context';
 
 function Carousel() {
-  const { isDarkMode } = usePort();
+  const { isDarkMode } = useDarkMode();
   const [value, setValue] = useState(3);
   const [windowDimensions, setWindowDimensions] = useState(getDimensions());
   const { width } = windowDimensions;

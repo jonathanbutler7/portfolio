@@ -1,14 +1,24 @@
+
+
 .project, .projectDark {
     
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 2rem 0;
     h1 {
         margin: 1rem;
     }
     img {
-        width: 25rem;
+        max-width: 100%;
+        padding: 2rem;
     }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .project {
@@ -34,18 +44,6 @@
     }
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.img {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-}
-
 .textContainer {
     flex: 1;
     height: 100%;
@@ -64,7 +62,7 @@
     padding: 0 2rem;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 900px) {
     .container, .darkContainer {
         flex-direction: column;
         margin: 0 auto;

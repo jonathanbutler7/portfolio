@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styles from './Header.module.scss';
 import Switch from './Switch';
-import { usePort } from '../store/context';
+import { useDarkMode } from '../helpers/context';
 import Hamburger from './Hamburger';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { emojisplosion } from 'emojisplosion';
 
 function Header() {
-  const { isDarkMode } = usePort();
+  const { isDarkMode } = useDarkMode();
   const [menu, showMenu] = useState(false);
 
   return (

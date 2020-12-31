@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Switch.module.scss';
 import DarkModeToggle from 'react-dark-mode-toggle';
-import { usePort } from '../store/context';
+import { useDarkMode } from '../helpers/context';
 
 function Switch() {
-  const { isDarkMode, setIsDarkMode } = usePort();
+  const { isDarkMode, setIsDarkMode } = useDarkMode();
 
   return (
     <div className={styles.main}>

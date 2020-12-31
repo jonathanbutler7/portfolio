@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './About.module.scss';
-import { usePort } from '../store/context';
+import { useDarkMode } from '../helpers/context';
 
 function About() {
-  const { isDarkMode } = usePort();
+  const { isDarkMode } = useDarkMode();
 
   return (
     <div className={isDarkMode ? styles.mainDark : styles.main}>

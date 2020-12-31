@@ -15,13 +15,24 @@ import { FaSpaceShuttle } from 'react-icons/fa';
 
 const projects = [
   {
+    title: 'Dashboard 💬',
+    code: dashboardCode,
+    live: dashboardApp,
+    icon: <GoPencil />,
+    technologies:
+      'leverages useContext, useReducer, and custom hooks to handle state updates every 2 seconds',
+    macbook: dashboard,
+    description:
+      'Mobile responsive, allows user to delete, edit, and filter messages',
+  },
+  {
     title: 'Noteful 📝',
     code: notefulCode,
     live: notefulApp,
     icon: <GrNotes />,
     technologies: 'uses PERN stack',
     macbook: noteful,
-    description: `This full stack app supports CRUD requests for /folders and /notes and supports sign up and sign in for /login, storing the user's encrypted passwords in the database.`,
+    description: `Full stack notes application prototype, features encrypted login, authentication with JWT, toast component to inform user of state updates, and custom useInterval hook.`,
   },
   {
     title: 'Space X 🚀',
@@ -32,17 +43,6 @@ const projects = [
     macbook: space_x,
     description:
       'This mobile response app uses jQuery to consume the Space X and NASA APIs.',
-  },
-  {
-    title: 'Dashboard 💬',
-    code: dashboardCode,
-    live: dashboardApp,
-    icon: <GoPencil />,
-    technologies:
-      'leverages useContext, useReducer, and custom hooks to handle state updates every 2 seconds',
-    macbook: dashboard,
-    description:
-      'Mobile responsive, allows user to delete, edit, and filter messages',
   },
 ];
 

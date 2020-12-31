@@ -1,5 +1,5 @@
 import React from 'react';
-import { resume } from '../store/links';
+import { resume } from '../store/links/index';
 
 function ProjectsContactResume() {
   return (

@@ -1,18 +1,14 @@
 import React from 'react';
-import { resume } from '../store/links/index';
+import { navLinks } from '../store/navLinks';
 
 function ProjectsContactResume() {
   return (
     <>
-      <a href='#projects'>
-        <h1>Projects</h1>
-      </a>
-      <a href='#contact'>
-        <h1>Contact</h1>
-      </a>
-      <a href={resume} target='blank'>
-        <h1>Resume</h1>
-      </a>
+      {navLinks.map((item, i) => (
+        <a href={item.href} key={i}>
+          <h1>{item.title}</h1>
+        </a>
+      ))}
     </>
   );
 }

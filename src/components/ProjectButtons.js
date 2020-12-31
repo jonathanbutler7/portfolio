@@ -11,7 +11,6 @@ export default function ProjectButtons({ project }) {
       <a href={project.code} className={style.code} target='blank'>
         <code>code</code>
       </a>
-
       <a href={project.live} className={style.live} target='blank'>
         <code>live</code>
       </a>

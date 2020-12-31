@@ -44,7 +44,7 @@ function Carousel() {
         <Slider className={style.slider}>
           {softSkills.map((skill, i) => (
             <Slide index={i} key={i}>
-              <div className={style.circle}>
+              <div className={style.skill}>
                 <Skill1 key={i} skill={skill} />
               </div>
             </Slide>

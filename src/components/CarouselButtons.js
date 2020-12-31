@@ -7,13 +7,15 @@ import { useDarkMode } from '../helpers/context';
 
 export default function CarouselButtons() {
   const { isDarkMode } = useDarkMode();
+  const size = { height: '2rem', width: '2rem' };
+  
   return (
     <div className={isDarkMode ? style.darkMain : style.main}>
       <ButtonBack className={style.buttonLeft}>
-        <AiOutlineArrowLeft style={{ height: '2rem', width: '2rem' }} />
+        <AiOutlineArrowLeft style={size} />
       </ButtonBack>
       <ButtonNext className={style.buttonRight}>
-        <AiOutlineArrowRight style={{ height: '2rem', width: '2rem' }} />
+        <AiOutlineArrowRight style={size} />
       </ButtonNext>
     </div>
   );

@@ -5,6 +5,11 @@
     width: 100vw;
     overflow: hidden;
     transition: var(--transition);
+
+    img {
+        transition: var(--transition);
+
+    }
 }
 
 .bannerContainerDark {
@@ -35,5 +40,6 @@
     .bannerContainerDark {
         height: 19vh;
         transition: var(--transition);
+        overflow: visible;
     }
 }

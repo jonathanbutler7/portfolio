@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './Banner.module.scss';
-import { lightBanner, darkBanner } from '../store/assets/index';
+import { lightBanner, darkBanner } from '../../store/assets/index';
 import Header from './Header';
 import NavBar from './NavBar';
-import { useDarkMode } from '../helpers/context';
+import { useDarkMode } from '../../helpers/context';
 export default function Banner() {
   const { isDarkMode } = useDarkMode();
   return (

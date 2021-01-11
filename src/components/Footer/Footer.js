@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.scss';
-import { useDarkMode } from '../helpers/context';
-import { contact } from '../store/content/index';
+import { useDarkMode } from '../../helpers/context';
+import { contact } from '../../store/content/index';
 
 function Footer() {
   const { isDarkMode } = useDarkMode();

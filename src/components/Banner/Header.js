@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Header.module.scss';
 import Switch from './Switch';
-import { useDarkMode } from '../helpers/context';
+import { useDarkMode } from '../../helpers/context';
 import Hamburger from './Hamburger';
 import { GiHamburgerMenu as HamburgerIcon } from 'react-icons/gi';
 import { emojisplosion } from 'emojisplosion';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { navLinks } from '../store/content/index';
+import { navLinks } from '../../store/content/index';
 
 function ProjectsContactResume() {
   return (

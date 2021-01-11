@@ -21,21 +21,22 @@
 
 
 .navBar {
-    background: var(--light-background);
+    // background: var(--light-background);
     transition: var(--transition);
-    border-bottom: 1px solid gainsboro;
+    // border-bottom: 1px solid gainsboro;
 
     button {
-        background: var(--light-tertiary);
-        color: var(--light-button-text);
+        background: transparent;
+        color: black;
+        border: 1px solid black;
     }
 }
 
 .navBarDark {
-    background: var(--dark-background);
+    // background: var(--dark-background);
     color: var(--dark-headline);
     transition: var(--transition);
-    border-bottom: 1px var(--dark-background);
+    // border-bottom: 1px var(--dark-background);
 
     button {
         background: var(--dark-button);

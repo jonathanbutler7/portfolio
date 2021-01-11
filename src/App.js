@@ -1,17 +1,15 @@
 import './styles/main.css';
-import Header from './components/Header';
-import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import About from './components/About';
 import Projects from './components/Projects';
 import Carousel from './components/Carousel';
+import Banner from './components/Banner';
 import { DarkModeProvider } from './helpers/context';
 
 function App() {
   return (
     <DarkModeProvider>
-      <Header />
-      <NavBar />
+      <Banner />
       <About />
       <Carousel />
       <Projects />

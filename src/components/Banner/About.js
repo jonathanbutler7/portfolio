@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './About.module.scss';
-import { useDarkMode } from '../helpers/context';
-
+import { useDarkMode } from '../../helpers/context';
+import { illustration } from '../../store/assets/index';
 function About() {
   const { isDarkMode } = useDarkMode();
 
@@ -16,6 +16,7 @@ function About() {
           lives.
         </h3>
       </div>
+      <img src={illustration} alt='' className={styles.illustration}  />
     </div>
   );
 }

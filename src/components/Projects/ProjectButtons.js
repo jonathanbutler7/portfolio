@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './ProjectButtons.module.scss';
-import { useDarkMode } from '../helpers/context';
+import { useDarkMode } from '../../helpers/context';
 
 export default function ProjectButtons({ project }) {
   const { isDarkMode } = useDarkMode();

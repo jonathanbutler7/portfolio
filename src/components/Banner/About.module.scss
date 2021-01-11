@@ -1,10 +1,11 @@
 .main,
 .mainDark {
-    padding: 2rem;
+    padding: 0 2rem;
     display: flex;
+    flex-direction: row;
     min-height: 25vh;
-    align-items: center;
 
+    // align-items: center;
     h1 {
         margin: 0;
     }
@@ -24,17 +25,32 @@
 }
 
 .text {
+    padding-top: 1rem;
+}
+
+.text,
+.illustration {
     flex: 1;
 }
 
-.technologies {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: space-evenly;
+.illustration {
+    width: 50%;
+}
 
-    svg {
-        height: 2.5rem;
-        width: 2.5rem;
+@media only screen and (max-width: 1000px) {
+
+    .main,
+    .mainDark {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .text {
+        padding: 2rem;
+    }
+
+    .illustration {
+        width: 100%;
+        padding: 1rem;
     }
 }

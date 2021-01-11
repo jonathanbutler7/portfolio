@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Skill.module.scss';
-import { useDarkMode } from '../helpers/context';
+import { useDarkMode } from '../../helpers/context';
 
 export default function Skill1({ skill }) {
   const { isDarkMode } = useDarkMode();

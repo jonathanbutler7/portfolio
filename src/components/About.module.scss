@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: row;
     min-height: 25vh;
-    align-items: center;
+
+    // align-items: center;
     h1 {
         margin: 0;
     }
@@ -23,24 +24,33 @@
     border-bottom: 1px solid var(--dark-background-secondary);
 }
 
-.text, .illustration {
+.text {
+    padding-top: 1rem;
+}
+
+.text,
+.illustration {
     flex: 1;
 }
+
 .illustration {
     width: 50%;
 }
 
 @media only screen and (max-width: 1000px) {
-    .main, .mainDark {
+
+    .main,
+    .mainDark {
         flex-direction: column;
         padding: 2rem;
     }
+
     .text {
         padding: 2rem;
     }
+
     .illustration {
         width: 100%;
         padding: 1rem;
     }
 }
-

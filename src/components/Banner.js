@@ -1,20 +1,20 @@
 import React from 'react';
 import style from './Banner.module.scss';
-import { lightBanner } from '../store/assets/index';
+import { lightBanner, darkBanner } from '../store/assets/index';
 import Header from './Header';
 import NavBar from './NavBar';
+import { useDarkMode } from '../helpers/context';
 export default function Banner() {
+  const { isDarkMode } = useDarkMode();
   return (
     <div
-      style={{
-        position: 'relative',
-        height: '35vh',
-        width: '100vw',
-        overflow: 'hidden',
-      }}
+      className={isDarkMode ? style.bannerContainerDark : style.bannerContainer}
     >
-      <img src={lightBanner} className={style.banner} alt='' />
-
+      <img
+        src={isDarkMode ? darkBanner : lightBanner}
+        className={style.banner}
+        alt=''
+      />
       <div
         style={{
           position: 'absolute',
@@ -23,9 +23,8 @@ export default function Banner() {
         }}
       >
         <Header />
-      <NavBar />
+        <NavBar />
       </div>
-      {/* <img src={illustration} alt='' className={style.illustration} /> */}
     </div>
   );
 }

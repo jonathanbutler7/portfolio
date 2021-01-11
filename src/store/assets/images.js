@@ -1,9 +1,10 @@
 const imgurUrl = 'https://i.imgur.com';
 
 const lightBanner = `${imgurUrl}/uZOIJxM.png`;
+const darkBanner = `${imgurUrl}/3LY64gL.png`;
 const illustration = `${imgurUrl}/rXDmNFc.png`;
 const noteful = `${imgurUrl}/8I5iRMY.png`;
 const dashboard = `${imgurUrl}/TEoL4dk.png`;
 const space_x = `${imgurUrl}/dNLBYLF.png`;
 
-export { lightBanner, illustration, dashboard, noteful, space_x };
+export { lightBanner, darkBanner, illustration, dashboard, noteful, space_x };

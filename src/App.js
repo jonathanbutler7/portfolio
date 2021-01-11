@@ -1,6 +1,6 @@
 import './styles/main.css';
 import Footer from './components/Footer/Footer';
-import About from './components/Banner/About';
+import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Carousel from './components/Carousel/Carousel';
 import Banner from './components/Banner/Banner';

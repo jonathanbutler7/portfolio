@@ -13,20 +13,18 @@
             cursor: pointer;
         }
     }
+
     img {
         width: 10rem;
     }
 }
 
 .nav {
-    // background: var(--color-darkblue);
-    // color: var(--light-background);
     color: white;
     transition: var(--transition);
 }
 
 .navDark {
-    // background: var(--dark-background);
     color: var(--dark-accent);
     transition: var(--transition);
 }

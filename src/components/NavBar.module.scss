@@ -16,16 +16,13 @@
     button {
         width: 11rem;
         height: 3rem;
-        
     }
 }
 
 
 .navBar {
-    // background: var(--light-background);
     transition: var(--transition);
     color: white;
-    // border-bottom: 1px solid gainsboro;
 
     button {
         background: transparent;
@@ -36,13 +33,11 @@
 }
 
 .navBarDark {
-    // background: var(--dark-background);
     color: var(--dark-headline);
     transition: var(--transition);
-    // border-bottom: 1px var(--dark-background);
 
     button {
-        background: var(--dark-paragraph);
+        background: var(--dark-background-secondary);
         color: var(--dark-button-text);
     }
 }

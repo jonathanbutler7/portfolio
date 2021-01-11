@@ -2,9 +2,9 @@
 .mainDark {
     padding: 0 2rem;
     display: flex;
+    flex-direction: row;
     min-height: 25vh;
     align-items: center;
-    display: flex;
     h1 {
         margin: 0;
     }
@@ -28,5 +28,19 @@
 }
 .illustration {
     width: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .main, .mainDark {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .text {
+        padding: 2rem;
+    }
+    .illustration {
+        width: 100%;
+        padding: 1rem;
+    }
 }
 

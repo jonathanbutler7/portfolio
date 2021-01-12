@@ -31,6 +31,7 @@
 .text,
 .illustration {
     flex: 1;
+    transition: var(--transition);
 }
 
 .illustration {

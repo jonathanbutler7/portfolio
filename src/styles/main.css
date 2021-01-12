@@ -68,7 +68,7 @@ Sections
 /**
 Remove the margin in all browsers.
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Trykker&display=swap');
 body {
   margin: 0;
 }
@@ -80,7 +80,7 @@ p {
 }
 h2,
 h4 {
-  font-family: 'Bio-Rhyme', serif;
+  font-family: 'Trykker', serif;
 }
 
 /**

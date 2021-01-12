@@ -5,9 +5,11 @@
     flex-direction: row;
     min-height: 25vh;
 
-    // align-items: center;
     h1 {
         margin: 0;
+    }
+    h1, h3:last-of-type {
+        margin-bottom: 1rem;
     }
 }
 

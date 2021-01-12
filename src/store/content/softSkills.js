@@ -46,7 +46,7 @@ const softSkills = [
     icon: <BsMusicNoteBeamed />,
   },
   {
-    title: 'Empathetic listener',
+    title: 'Listener',
     detail:
       'I take pride in my ability to listen to others, empathize with their concerns, and learn from their perspectives.',
     icon: <FaAssistiveListeningSystems />,

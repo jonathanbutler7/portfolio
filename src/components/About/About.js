@@ -15,8 +15,16 @@ function About() {
           build intuitive UIs that alleviate pain points & improve peoples'
           lives.
         </h3>
+        <p>
+          I have a strong interest in problem solving, developing sustainable
+          solutions, <br /> and building healthy team culture.
+        </p>
       </div>
-      <img src={isDarkMode ? darkIllustration : illustration} alt='' className={styles.illustration}  />
+      <img
+        src={isDarkMode ? darkIllustration : illustration}
+        alt=''
+        className={styles.illustration}
+      />
     </div>
   );
 }

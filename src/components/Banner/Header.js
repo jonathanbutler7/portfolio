@@ -11,15 +11,14 @@ function Header() {
   const [menu, showMenu] = useState(false);
 
   function whichOne() {
-    console.log('called in header')
     if (!menu) {
       showMenu(true);
-    } if (menu) {
-      console.log('closing');
+    }
+    if (menu) {
       return;
     }
   }
-  console.log(menu);
+
   return (
     <header className={isDarkMode ? styles.navDark : styles.nav}>
       <div className={styles.hamburger}>

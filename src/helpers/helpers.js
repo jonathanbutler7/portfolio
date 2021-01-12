@@ -24,7 +24,6 @@ function useOutsideAlerter(ref, showMenu, menu) {
     
     
       return () => {
-        console.log('called in helpers')
         // Unbind the event listener on clean up
         document.removeEventListener('mousedown', handleClickOutside);
       };

@@ -8,7 +8,7 @@ function getDimensions() {
   };
 }
 
-function useOutsideAlerter(ref, showMenu) {
+function useOutsideAlerter(ref, showMenu, menu) {
   useEffect(() => {
     /**
      * Alert if clicked on outside of element
@@ -18,13 +18,18 @@ function useOutsideAlerter(ref, showMenu) {
         showMenu(false);
       }
     }
-    // Bind the event listener
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      // Unbind the event listener on clean up
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [ref, showMenu]);
+    
+      // Bind the event listener
+      document.addEventListener('mousedown', handleClickOutside);
+    
+    
+      return () => {
+        console.log('called in helpers')
+        // Unbind the event listener on clean up
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+    
+  }, [ref, showMenu, menu]);
 }
 
 export { getDimensions, useOutsideAlerter };

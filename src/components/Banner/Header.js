@@ -10,10 +10,20 @@ function Header() {
   const { isDarkMode } = useDarkMode();
   const [menu, showMenu] = useState(false);
 
+  function whichOne() {
+    console.log('called in header')
+    if (!menu) {
+      showMenu(true);
+    } if (menu) {
+      console.log('closing');
+      return;
+    }
+  }
+  console.log(menu);
   return (
     <header className={isDarkMode ? styles.navDark : styles.nav}>
       <div className={styles.hamburger}>
-        <HamburgerIcon onClick={() => showMenu(!menu)} />
+        <HamburgerIcon onClick={() => whichOne()} />
       </div>
       {menu && <Hamburger showMenu={showMenu} menu={menu} />}
       <div className={styles.left}>

@@ -29,31 +29,14 @@ Use a more readable tab size (opinionated).
 :root {
   -moz-tab-size: 4;
   tab-size: 4;
-  --color-gray1: #dfdfdf;
-  --color-gray2: #979797;
-  --color-purple: #6f5ed3;
-  --color-green: #0BA74F;
-  --color-teal: #0897AE;
   --color-white: white;
-  --color-darkteal: #083D4F;
   --color-darkblue: #002739;
   --color-white: white;
-  --color-pink: pink;
-  --dark-black: #000000;
-  --dark-gray: #3C4042;
-  --dark-lightgray: #606368;
-  --dark-accent: #D5D5D5;
-  --dark-purple: #C38FFF;
-  --dark-pink: #EA80FC;
+  --dark-gray: #3c4042;
+  --dark-accent: #d5d5d5;
   --light-background: #fffffe;
   --light-headline: #2b2c34;
   --light-paragraph: #2b2c34;
-  --light-button: #6246ea;
-  --light-button-text: #fffffe;
-  --light-stroke: #2b2c34;
-  --light-main: #fffffe;
-  --light-highlight: #6246ea;
-  --light-secondary: #d1d1e9;
   --light-tertiary: #e45858;
 
   --dark-background: #16161a;
@@ -62,14 +45,8 @@ Use a more readable tab size (opinionated).
   --dark-paragraph: #94a1b2;
   --dark-button: #7f5af0;
   --dark-button-text: #fffffe;
-  --dark-stroke: #010101;
-  --dark-main: #fffffe;
-  --dark-highlight: #7f5af0;
-  --dark-secondary: #72757e;
-  --dark-tertiary: #2cb67d;
 
   --transition: all 0.5s ease-in-out;
-
 }
 
 /**
@@ -95,18 +72,20 @@ Remove the margin in all browsers.
 body {
   margin: 0;
 }
-    h1, h3, h5, p {
-      font-family: 'Cabin', sans-serif;
-    }
-    h2, h4 {
-      font-family: 'Bio-Rhyme', serif;
-    }
+h1,
+h3,
+h5,
+p {
+  font-family: 'Cabin', sans-serif;
+}
+h2,
+h4 {
+  font-family: 'Bio-Rhyme', serif;
+}
 
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
-
-
 
 /*
 Grouping content
@@ -154,13 +133,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family:
-		ui-monospace,
-		SFMono-Regular,
-		Consolas,
-		'Liberation Mono',
-		Menlo,
-		monospace; /* 1 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+    monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -234,7 +208,8 @@ Remove the inheritance of text transform in Edge and Firefox.
 */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -411,7 +386,9 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -492,7 +469,7 @@ textarea::placeholder {
 }
 
 button,
-[role="button"] {
+[role='button'] {
   cursor: pointer;
 }
 
@@ -549,7 +526,8 @@ pre,
 code,
 kbd,
 samp {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
 }
 
 /**
